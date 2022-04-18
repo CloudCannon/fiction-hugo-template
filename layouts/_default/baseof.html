@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html lang="en">
+    {{- partial "head/head.html" . -}}
+    <body>
+        <main>
+            <!-- Render any additional page content below the page's content blocks -->
+            {{ block "main" . }}{{ end }}
+        </main>
+        <h3 x-data="{ message: 'I ❤️ HUGO, Alpine & Bookshop' }" x-text="message"></h3>
+    </body>
+</html>

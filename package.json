@@ -1,0 +1,34 @@
+{
+  "name": "fiction-hugo-template",
+  "version": "1.0.0",
+  "description": "Starter template for hugo, alpine, bookshop",
+  "main": "index.js",
+  "scripts": {
+    "start": "run-p javascript hugo-server javascript",
+    "dev": "run-p javascript hugo-server bookshop",
+    "hugo-server": "hugo server -D --watch",
+    "build": "hugo --source ./ --destination public --baseURL /",
+    "javascript": "esbuild assets/js/index.js --bundle --outfile=assets/js/build.js",
+    "bookshop": "npx @bookshop/browser@beta",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CloudCannon/fiction-hugo-template.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CloudCannon/fiction-hugo-template/issues"
+  },
+  "homepage": "https://github.com/CloudCannon/fiction-hugo-template#readme",
+  "dependencies": {
+    "@bookshop/browser": "3.0.0-beta.6",
+    "@bookshop/generate": "3.0.0-beta.6",
+    "@bookshop/hugo-engine": "3.0.0-beta.6",
+    "alpinejs": "^3.9.5",
+    "esbuild": "^0.14.29",
+    "npm-run-all": "^4.1.5"
+  }
+}
