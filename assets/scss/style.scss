@@ -1,0 +1,50 @@
+//Variables
+@import "scss/variables";
+
+@import "scss/typography";
+
+//Base
+@import "scss/common";
+
+//Layout
+@import "scss/layout/header";
+
+@import "scss/layout/footer";
+
+/* Home page style
+====================== */
+@import "scss/layout/home";
+
+@import "scss/layout/hero-area";
+
+@import "scss/layout/call-to-action";
+
+@import "scss/layout/pricing-table";
+
+@import "scss/layout/team";
+
+/* Services page style
+====================== */
+@import "scss/layout/services";
+
+/* testimonials page style
+====================== */
+@import "scss/layout/testimonials";
+
+/* Portfolio Page and 
+   Portfolio Single Page style
+================================= */
+@import "scss/layout/portfolio";
+
+/* blog page style
+====================== */
+@import "scss/layout/blog";
+
+/* Contact page style
+====================== */
+@import "scss/layout/contact";
+
+
+
+@import "scss/layout/responsive";
+
