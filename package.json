@@ -9,7 +9,7 @@
     "hugo-server": "hugo server -D --watch",
     "build": "hugo --source ./ --destination public --baseURL /",
     "javascript": "esbuild assets/js/index.js --bundle --outfile=assets/js/build.js",
-    "bookshop": "npx @bookshop/browser@beta",
+    "bookshop": "npx @bookshop/browser@latest",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -24,9 +24,9 @@
   },
   "homepage": "https://github.com/CloudCannon/fiction-hugo-template#readme",
   "dependencies": {
-    "@bookshop/browser": "3.0.0-beta.6",
-    "@bookshop/generate": "3.0.0-beta.6",
-    "@bookshop/hugo-engine": "3.0.0-beta.6",
+    "@bookshop/browser": "3.0.1",
+    "@bookshop/generate": "3.0.1",
+    "@bookshop/hugo-engine": "3.0.1",
     "alpinejs": "^3.9.5",
     "esbuild": "^0.14.29",
     "npm-run-all": "^4.1.5"
