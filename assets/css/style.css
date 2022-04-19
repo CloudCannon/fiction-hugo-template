@@ -298,7 +298,7 @@ button:hover, button:focus {
   font-size: 14px;
   font-weight: 400;
   text-transform: uppercase;
-  color: #fff;
+  color: #facd8a;
   transition: 0.5s;
   position: relative;
 }
