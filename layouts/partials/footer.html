@@ -45,7 +45,7 @@
                 <div class="footer-nav text-center">
                     <div class="col-md-12">
                         <ul>
-                            {{ range .Site.Data.nav.menu }}
+                            {{ range .Site.Data.footer.menu }}
                                 <li><a href="{{ .url }}" {{ if .open_in_new_tab }}target="_blank"{{ end }}>{{ .name }}</a></li>
                             {{ end }}
                         </ul>
