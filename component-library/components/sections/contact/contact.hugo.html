@@ -1,0 +1,18 @@
+<!-- Contact Us Sections
+=========================-->
+<section class="contact-call-to-action">
+    <div class="shadow-block vh-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="block">
+              <h2>{{ .heading }}</h2>
+              <p>{{ .content }}</p>
+              {{ partial "bookshop" (slice "generic/button" .button )}}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="map" data-latitude="51.507351" data-longitude="-0.127758"></div>
+  </section>

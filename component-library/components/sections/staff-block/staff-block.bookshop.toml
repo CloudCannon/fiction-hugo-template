@@ -1,0 +1,49 @@
+# Metadata about this component, to be used in the CMS
+[spec]
+structures = ['content_blocks']
+label = 'Staff block'
+description = 'Staff pictures and information'
+icon = 'collections'
+tags = []
+
+# Defines the structure of this component, as well as the default values
+[blueprint]
+[blueprint.heading]
+heading = ''
+[[blueprint.team_members]]
+image_src = ''
+image_alt = ''
+name = ''
+job_title = ''
+description = ''
+facebook_url = ''
+twitter_url = ''
+linkedin_url = ''
+google_url = ''
+instagram_url = ''
+[blueprint.button]
+url = ''
+content = ''
+
+# Overrides any fields in the blueprint when viewing this component in the component browser
+[preview]
+[preview.heading]
+heading = 'Our specialized team'
+[[preview.team_members]]
+image_src = 'images/team/team-pic1.jpg'
+image_alt = 'Team img'
+name = 'aurelien salomo'
+job_title = 'Creative Director'
+description = 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim.'
+facebook_url = '#'
+twitter_url = '#'
+linkedin_url = '#'
+google_url = '#'
+instagram_url = '#'
+[preview.button]
+url = '#'
+content = 'View More'
+
+
+# Any extra CloudCannon inputs configuration to apply to the blueprint
+[_inputs]
