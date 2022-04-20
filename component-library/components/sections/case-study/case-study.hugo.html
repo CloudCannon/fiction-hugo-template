@@ -1,4 +1,4 @@
-<section class="case-study case-study--{{ .background_color }}">
+<section class="case-study case-study--{{ .background }}">
   {{ partial "bookshop" (slice "generic/heading" .heading )}}
     {{ range .left_right_blocks }}
         {{ partial "bookshop" (slice "simple/left-right-block" .)}}

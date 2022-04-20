@@ -8,12 +8,12 @@ tags = []
 
 # Defines the structure of this component, as well as the default values
 [blueprint]
-background_color = 'grey'
+background = 'grey'
 [blueprint.heading]
 heading = ''
 [[blueprint.left_right_blocks]]
 image_alignment = 'right'
-background_color = 'grey'
+background = 'grey'
 heading = ''
 content_html = ''
 image = ''
@@ -28,7 +28,7 @@ content = ''
 heading = 'Case Study'
 [[preview.left_right_blocks]]
 image_alignment = 'right'
-background_color = 'grey'
+background = 'grey'
 heading = 'hello'
 content_html = 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euiyd tincidunt ut laoreet dolore magna aliquam nibh utpat.Ullamcorper suscipit lobo nibh euiyd tinci- dunt ut laoreet.</br> <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem impedit molestias cumque dolorum, sunt, provident blanditiis tempora, aut explicabo error ipsa repudiandae. Dolores eius eaque eum mollitia esse nisi necessitatibus distinctio ea, dolorem non, optio minima temporibus blanditiis, quidem aperiam!</p>'
 image = ''
@@ -38,7 +38,7 @@ url = ''
 content = ''
 [[preview.left_right_blocks]]
 image_alignment = 'right'
-background_color = 'black'
+background = 'black'
 heading = 'hello'
 content_html = 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euiyd tincidunt ut laoreet dolore magna aliquam nibh utpat.Ullamcorper suscipit lobo nibh euiyd tinci- dunt ut laoreet.</br> <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem impedit molestias cumque dolorum, sunt, provident blanditiis tempora, aut explicabo error ipsa repudiandae. Dolores eius eaque eum mollitia esse nisi necessitatibus distinctio ea, dolorem non, optio minima temporibus blanditiis, quidem aperiam!</p>'
 image = ''
@@ -50,11 +50,8 @@ content = 'View more'
 
 # Any extra CloudCannon inputs configuration to apply to the blueprint
 [_inputs]
-background_color.type = 'select'
-background_color.options.values = ['grey', 'black']
-[_inputs.left_right_blocks]
+background.type = 'select'
+background.options.values = ['grey', 'black']
 image_alignment.type = 'select'
 image_alignment.options.values = ['right', 'left']
-background_color.type = 'select'
-background_color.options.values = ['grey', 'black']
 

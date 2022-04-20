@@ -12,10 +12,10 @@ content_blocks:
     heading:
       _bookshop_name: generic/heading
       heading: Case Study
-    background_color: grey
+    background: grey
     left_right_blocks:
       - _bookshop_name: simple/left-right-block
-        background_color: grey
+        background: grey
         image_alignment: right
         heading: 'E Banks That Accept Us Casino Players'
         content_html: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
@@ -32,7 +32,7 @@ content_blocks:
         image: 'images/case-study/case-study-img1.png'
         image_alt: ' '
       - _bookshop_name: simple/left-right-block
-        background_color: black
+        background: black
         image_alignment: left
         heading: 'E Banks That Accept Us Casino Players'
         content_html: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euiyd tincidunt ut laoreet dolore magna aliquam nibh utpat.Ullamcorper suscipit lobo nibh euiyd tinci- dunt ut laoreet.</br>
