@@ -11,7 +11,7 @@ tags = []
 [blueprint.heading]
 heading = ''
 [[blueprint.team_members]]
-image_src = ''
+image = ''
 image_alt = ''
 name = ''
 job_title = ''
@@ -30,7 +30,7 @@ content = ''
 [preview.heading]
 heading = 'Our specialized team'
 [[preview.team_members]]
-image_src = 'images/team/team-pic1.jpg'
+image = 'images/team/team-pic1.jpg'
 image_alt = 'Team img'
 name = 'aurelien salomo'
 job_title = 'Creative Director'

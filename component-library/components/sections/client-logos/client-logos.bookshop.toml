@@ -10,17 +10,17 @@ tags = []
 [blueprint]
 background_image = ''
 [[blueprint.client_logos]]
-image_src = ''
+image = ''
 image_alt = ''
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
 [preview]
 background_image = 'images/slider/bg-1.jpg'
 [[preview.client_logos]]
-image_src = 'images/clients-logo/client-logo-1.png'
+image = 'images/clients-logo/client-logo-1.png'
 image_alt = 'Client Logo'
 [[preview.client_logos]]
-image_src = 'images/clients-logo/client-logo-1.png'
+image = 'images/clients-logo/client-logo-1.png'
 image_alt = 'Client Logo'
 
 # Any extra CloudCannon inputs configuration to apply to the blueprint

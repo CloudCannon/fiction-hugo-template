@@ -15,5 +15,5 @@ menu:
     url: "/contact/"
     open_in_new_tab: false
 logo:
-  image_src: "/images/logo-yellow.png"
+  image: "/images/logo-yellow.png"
   alt: ""

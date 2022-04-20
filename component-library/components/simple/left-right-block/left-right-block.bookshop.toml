@@ -12,7 +12,7 @@ image_alignment = 'right'
 background_color = 'grey'
 heading = ''
 content_html = ''
-image_src = ''
+image = ''
 image_alt = ''
 [blueprint.button]
 url = ''
@@ -22,7 +22,7 @@ content = ''
 [preview]
 heading = 'E Banks That Accept Us Casino Players'
 content_html = 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euiyd tincidunt ut laoreet dolore magna aliquam nibh utpat.Ullamcorper suscipit lobo nibh euiyd tinci- dunt ut laoreet.</br> <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem impedit molestias cumque dolorum, sunt, provident blanditiis tempora, aut explicabo error ipsa repudiandae. Dolores eius eaque eum mollitia esse nisi necessitatibus distinctio ea, dolorem non, optio minima temporibus blanditiis, quidem aperiam!</p>'
-image_src = 'images/case-study/case-study-img1.png'
+image = 'images/case-study/case-study-img1.png'
 [preview.button]
 url = '#'
 content = 'View More'
