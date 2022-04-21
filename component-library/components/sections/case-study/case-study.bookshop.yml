@@ -12,14 +12,13 @@ blueprint:
   background: grey
   heading:
     heading: ""
-  left_right_blocks: bookshop:simple/left-right-block
+  left_right_blocks: [bookshop:simple/left-right-block]
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:
   heading:
     heading: Case Study
   left_right_blocks: 
-   - bookshop:simple/left-right-block
    - bookshop:simple/left-right-block
    
 # Any extra CloudCannon inputs configuration to apply to the blueprint
@@ -30,9 +29,3 @@ _inputs:
       values:
         - grey
         - black
-  image_alignment:
-    type: select
-    options:
-      values:
-        - right
-        - left
