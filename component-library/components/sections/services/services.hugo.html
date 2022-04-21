@@ -1,0 +1,14 @@
+<!-- Service Item Sections 
+  =========================-->
+<section class="services">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                {{ partial "bookshop" (slice "generic/heading" .heading )}}
+            </div>
+            {{ range .service }}
+                {{ partial "bookshop" (slice "simple/icon-and-content" .)}}
+            {{ end }}
+        </div>
+    </div>
+</section>
