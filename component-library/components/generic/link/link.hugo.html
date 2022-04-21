@@ -1,0 +1,2 @@
+{{ $secondary := "secondary" }}
+<a class="btn btn-default btn-main {{ if eq .style $secondary }} th-btn-border {{ end }}" href="{{ .url }}" role="link">{{ .content }}</a>

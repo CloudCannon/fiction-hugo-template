@@ -4,14 +4,14 @@ spec:
     - content_blocks
   label: Contact
   description: Map and contact information
-  icon: quick_contacts_dialer
+  icon: call
   tags: []
 
 # Defines the structure of this component, as well as the default values
 blueprint:
   heading: ""
   content: ""
-  button:
+  link:
     url: ""
     content: ""
 
@@ -24,7 +24,7 @@ preview:
     beatae sed dolorem doloribus accusamus
   location_latitude: "51.507351"
   location_longitude: "-0.127758"
-  button:
+  link:
     url: "#"
     content: View More
 

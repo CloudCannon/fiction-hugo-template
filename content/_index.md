@@ -24,8 +24,8 @@ content_blocks:
           minima temporibus blanditiis, quidem aperiam!</p>
         image: /images/case-study/case-study-img1.png
         image_alt:
-        button:
-          _bookshop_name: generic/button
+        link:
+          _bookshop_name: generic/link
           url: '#'
           content: View More
       - _bookshop_name: simple/left-right-block
@@ -43,8 +43,8 @@ content_blocks:
           minima temporibus blanditiis, quidem aperiam!</p>
         image: /images/case-study/case-study-img2.png
         image_alt:
-        button:
-          _bookshop_name: generic/button
+        link:
+          _bookshop_name: generic/link
           url: '#'
           content: View More
   - _bookshop_name: sections/testimonials-block
@@ -213,8 +213,8 @@ content_blocks:
         linkedin_url: '#'
         google_url: '#'
         instagram_url: '#'
-    button:
-      _bookshop_name: generic/button
+    link:
+      _bookshop_name: generic/link
       url: '#'
       content: Join Our Team
   - _bookshop_name: sections/contact
@@ -224,8 +224,8 @@ content_blocks:
       cum ad officia, harum, et voluptas quia vel voluptatem aliquam, facilis
       corporis nam tempore ullam doloribus iusto sequi ipsum. Fugiat non culpa
       ad beatae sed dolorem doloribus accusamus
-    button:
-      _bookshop_name: generic/button
+    link:
+      _bookshop_name: generic/link
       url: '#'
       content: Contact Us
     location_latitude: '51.507351'

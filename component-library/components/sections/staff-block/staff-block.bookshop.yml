@@ -22,7 +22,7 @@ blueprint:
       linkedin_url: ""
       google_url: ""
       instagram_url: ""
-  button:
+  link:
     url: ""
     content: ""
 
@@ -42,7 +42,7 @@ preview:
       linkedin_url: "#"
       google_url: "#"
       instagram_url: "#"
-  button:
+  link:
     url: "#"
     content: View More
 
