@@ -2,30 +2,20 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
     <!-- Place favicon.ico in the root directory -->
 
-    <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
-    <!-- ThemeFisher Icon -->
-    <link rel="stylesheet" href="plugins/themefisher-fonts/themefisher-fonts.css">
-    <!-- Light Box -->
-    <link rel="stylesheet" href="plugins/magnific-popup/magnific-popup.css">
-    <!-- animation css -->
-    <link rel="stylesheet" href="plugins/animate/animate.css">
-    <!-- slick slider -->
-    <link rel="stylesheet" href="plugins/slick/slick.css">
-
     {{ $js := resources.Get "js/build.js" }}
-    <script src="{{ $js.RelPermalink }}"></script>
+    <script src="{{ $js.RelPermalink }}" preload></script>
     <!-- The bookshop_scss partial returns a slice of all SCSS resources from your Bookshop -->
     {{ $bookshop_scss_files := partial "bookshop_scss" . }}
     <!-- resources.Concat converts all of the above SCSS resources into one logical CSS file -->
     {{ $bookscss := $bookshop_scss_files | resources.Concat "css/bookshop.css" |
     resources.ToCSS }}
     <!-- fetch all *.css files in the ./assets/css/ folder and combine them -->
-    {{ $css := resources.Match "css/*.css" | resources.Concat "glob1.css" }}
+    {{ $css := resources.Match "css/**/*.css" | resources.Concat "glob1.css" }}
     <!-- fetch all *.scss files in the ./assets/scss/ folder and combine and convert to css -->
-    {{ $scss := resources.Match "scss/style.scss" | resources.Concat "glob5.css" | resources.ToCSS }}
+    {{ $scss := resources.Match "scss/style.scss" | resources.Concat "glob2.css" | resources.ToCSS }}
     <!-- combine all bookshop, css and scss files into one resources -->
     {{ $css := slice $css $scss $bookscss | resources.Concat "main.css"  }}
     <!-- minify and fingerprint css while in production -->
@@ -42,7 +32,7 @@
         }
         /* Optional: Makes the sample page fill the window. */
       </style>
-    <script src="plugins/modernizr.min.js"></script>
+    <script src="/plugins/modernizr.min.js"></script>
 
     <title>{{ print .Page.Title " | " .Site.Title }}</title>
 </head>
