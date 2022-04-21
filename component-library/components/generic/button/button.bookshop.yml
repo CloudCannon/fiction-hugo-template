@@ -2,20 +2,18 @@
 spec:
   structures:
     - ""
-  label: link
-  description: link
+  label: Button
+  description: Button
   icon: smart_button
   tags: []
 
 # Defines the structure of this component, as well as the default values
 blueprint:
-  url: ""
   content: ""
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:
-  url: "#"
-  content: View More
+  content: Order Now
 
 # Any extra CloudCannon inputs configuration to apply to the blueprint
 _inputs: {}

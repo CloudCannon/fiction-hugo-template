@@ -13,7 +13,7 @@ blueprint:
     price: ''
     plan_length: ''
     features: [bookshop:simple/plan-feature]
-    link: bookshop:generic/link
+    button: bookshop:generic/button
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:
@@ -24,7 +24,7 @@ preview:
       - bookshop:simple/plan-feature
       - bookshop:simple/plan-feature
       - bookshop:simple/plan-feature
-    link: bookshop:generic/link
+    button: bookshop:generic/button
    
 # Any extra CloudCannon inputs configuration to apply to the blueprint
 _inputs: {}
