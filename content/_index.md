@@ -4,6 +4,49 @@ content_blocks:
   - _bookshop_name: sections/big-hero
     heading: We’re Creative <br>We Ensure Quality Design
     background_image: /images/slider/bg-1.jpg
+  - _bookshop_name: sections/case-study
+    background: grey
+    heading:
+      heading: Case Study
+    left_right_blocks:
+      - _bookshop_name: simple/left-right-block
+        image_alignment: right
+        background: grey
+        heading: E Banks That Accept Us Casino Players
+        content_html: >-
+          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+          nonummy nibh euiyd tincidunt ut laoreet dolore magna aliquam nibh
+          utpat.Ullamcorper suscipit lobo nibh euiyd tinci- dunt ut
+          laoreet.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing
+          elit. Rem impedit molestias cumque dolorum, sunt, provident blanditiis
+          tempora, aut explicabo error ipsa repudiandae. Dolores eius eaque eum
+          mollitia esse nisi necessitatibus distinctio ea, dolorem non, optio
+          minima temporibus blanditiis, quidem aperiam!</p>
+        image: /images/case-study/case-study-img1.png
+        image_alt:
+        button:
+          _bookshop_name: generic/button
+          url: '#'
+          content: View More
+      - _bookshop_name: simple/left-right-block
+        image_alignment: left
+        background: black
+        heading: E Banks That Accept Us Casino Players
+        content_html: >-
+          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+          nonummy nibh euiyd tincidunt ut laoreet dolore magna aliquam nibh
+          utpat.Ullamcorper suscipit lobo nibh euiyd tinci- dunt ut
+          laoreet.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing
+          elit. Rem impedit molestias cumque dolorum, sunt, provident blanditiis
+          tempora, aut explicabo error ipsa repudiandae. Dolores eius eaque eum
+          mollitia esse nisi necessitatibus distinctio ea, dolorem non, optio
+          minima temporibus blanditiis, quidem aperiam!</p>
+        image: /images/case-study/case-study-img2.png
+        image_alt:
+        button:
+          _bookshop_name: generic/button
+          url: '#'
+          content: View More
   - _bookshop_name: sections/testimonials-block
     background_image: images/slider/bg-3.jpg
     heading:
