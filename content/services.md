@@ -1,7 +1,8 @@
 ---
 title: Services
 hero:
-  heading: Our Services. </br>We ensure Quality Design.
+  heading: Our Services.
+  subheading: We ensure Quality Design.
   image: /images/header/services-folding-img.jpg
 content_blocks:
   - _bookshop_name: sections/services
