@@ -1,0 +1,12 @@
+<section class="gallery">
+    <div class="container">
+      <div class="row">
+        <div class="gallery-description text-center">
+          <p>{{ .content | safeHTML }}</p>
+        </div>
+        {{ range .gallery_images }}
+            {{ partial "bookshop" (slice "simple/gallery-image" .)}}
+        {{ end }}
+      </div><!-- /.End row -->
+    </div>
+  </section>

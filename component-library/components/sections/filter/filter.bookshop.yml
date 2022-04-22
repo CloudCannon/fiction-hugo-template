@@ -1,29 +1,24 @@
 # Metadata about this component, to be used in the CMS
 spec:
   structures:
-    - ""
-  label: Portfolio item
-  description: Image and details
+    - content_blocks
+  label: Portfolio
+  description: Grid layout of portfolio items with filtering and heading
   icon: 
   tags: []
 
 # Defines the structure of this component, as well as the default values
 blueprint:
-  category: ""
-  image: ""
-  image_alt: ""
-  date: ""
-  title: ""
-  subtitle: ""
+  heading: bookshop:generic/heading
+  buttons: [bookshop:generic/filter-button]
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:
-  category: category-1
-  image: /images/portfolio/portfolio-img1.jpg
-  image_alt: Portfolio
-  date: '16.03.2015'
-  title: Merit wogmonk
-  subtitle: Branding
-
+  heading: bookshop:generic/heading
+  buttons:
+    - bookshop:generic/filter-button
+    - bookshop:generic/filter-button
+    - bookshop:generic/filter-button
+    
 # Any extra CloudCannon inputs configuration to apply to the blueprint
 _inputs: {}
