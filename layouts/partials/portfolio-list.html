@@ -7,22 +7,24 @@
                 {{ partial "bookshop_partial" (slice "page" .Params.content_blocks) }} 
                 <div id="Container" class="filtr-container row">
                     {{ range .Paginator.Pages }}
-                    <div class="filtr-item col-md-4 col-sm-6 col-xs-12" data-category="{{ .Params.category }}">
-                        <div class="portfolio-list">
-                            <a href="{{ .RelPermalink }}">
-                                <div class="th-mouse-portfolio-card">
-                                    <div class="thumbnail portfolio-thumbnail">
-                                        <img src="{{ .Params.image }}" alt="{{ .Params.image_alt }}">
-                                        <div class="caption portfolio-caption">
-                                            <p class="date">{{ .Date.Format "02.01.2006" }}</p>
-                                            <h3 class="portfolio-title">{{ .Params.title }}</h3>
-                                            <p class="portfolio-subtitle">{{ .Params.subtitle }}</p>
+                        {{ if ne .File.BaseFileName "_defaults"}}
+                            <div class="filtr-item col-md-4 col-sm-6 col-xs-12" data-category="{{ .Params.category }}">
+                                <div class="portfolio-list">
+                                    <a href="{{ .RelPermalink }}">
+                                        <div class="th-mouse-portfolio-card">
+                                            <div class="thumbnail portfolio-thumbnail">
+                                                <img src="{{ .Params.image }}" alt="{{ .Params.image_alt }}">
+                                                <div class="caption portfolio-caption">
+                                                    <p class="date">{{ .Date.Format "02.01.2006" }}</p>
+                                                    <h3 class="portfolio-title">{{ .Params.title }}</h3>
+                                                    <p class="portfolio-subtitle">{{ .Params.subtitle }}</p>
+                                                </div>
+                                            </div>
                                         </div>
-                                    </div>
+                                    </a>
                                 </div>
-                            </a>
-                        </div>
-                    </div>
+                            </div>
+                        {{end}}
                     {{end}}
                 </div>
             </div>
