@@ -2,9 +2,3 @@ collections_config:
   pages:
     _enabled_editors:
       - visual
-  portfolios:
-    schemas:
-      default:
-        path: schemas/portfolio.md
-    _enabled_editors:
-      - visual
