@@ -228,7 +228,9 @@ content_blocks:
       _bookshop_name: generic/link
       url: '#'
       content: Contact Us
-    location_latitude: '51.507351'
-    location_longitude: '-0.127758'
+    map:
+      _bookshop_name: generic/map
+      latitude: "51.507351"
+      longitude: "-0.127758"
 ---
 

@@ -14,7 +14,7 @@ blueprint:
   link:
     url: ""
     content: ""
-
+  map: bookshop:generic/map
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:
   heading: Get In Touch
@@ -22,8 +22,6 @@ preview:
     cum ad officia, harum, et voluptas quia vel voluptatem aliquam, facilis
     corporis nam tempore ullam doloribus iusto sequi ipsum. Fugiat non culpa ad
     beatae sed dolorem doloribus accusamus
-  location_latitude: "51.507351"
-  location_longitude: "-0.127758"
   link:
     url: "#"
     content: View More
