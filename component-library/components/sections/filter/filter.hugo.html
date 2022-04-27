@@ -1,6 +1,4 @@
-<div class="text-center">
-    {{ partial "bookshop" (slice "generic/heading" .heading )}}
-</div>
+{{ partial "bookshop" (slice "generic/heading" .heading )}}
 <div class="protfolio-mixitup-btn text-center">
     <button class="filter btn btn-default btn-main active" data-filter="all">all</button>
     {{ range .buttons }}

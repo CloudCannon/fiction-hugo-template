@@ -3,13 +3,11 @@
 <section class="blog">
     <div class="container">
         <div class="row">
-            <div class="text-center">
-                    {{ if .Params.heading }}
-                        {{ partial "bookshop" (slice "generic/heading" .Params.heading ) }}
-                    {{ else }}
-                        {{ partial "bookshop" (slice "generic/heading" (dict "heading" (.Title | humanize))) }}
-                    {{ end }}
-            </div>
+            {{ if .Params.heading }}
+                {{ partial "bookshop" (slice "generic/heading" .Params.heading ) }}
+            {{ else }}
+                {{ partial "bookshop" (slice "generic/heading" (dict "heading" (.Title | humanize))) }}
+            {{ end }}
             <div class="col-md-9">
             {{ range $index, $element := .Paginator.Pages }}
                 {{ if ne .File.BaseFileName "_defaults"}}
