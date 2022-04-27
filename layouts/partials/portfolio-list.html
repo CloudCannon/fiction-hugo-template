@@ -6,7 +6,7 @@
                 {{ partial "bookshop_bindings" `.Params.content_blocks` }}
                 {{ partial "bookshop_partial" (slice "page" .Params.content_blocks) }} 
                 <div id="Container" class="filtr-container row">
-                    {{ range .Paginator.Pages }}
+                    {{ range (.Paginator (len (where .Site.Pages "Section" "portfolios"))).Pages }}
                         {{ if ne .File.BaseFileName "_defaults"}}
                             <div class="filtr-item col-md-4 col-sm-6 col-xs-12" data-category="{{ .Params.category }}">
                                 <div class="portfolio-list">
