@@ -26,7 +26,7 @@ preview:
     iste vel consectetur error facilis quae ducimus sint beatae vitae nesciunt
     explicabo esse nam. Soluta harum ipsa officia nam adipisci velit debitis!
     Dolore a ducimus, assumenda aspernatur fugit!
-  author_image: images/clients-img1.png
+  author_image: /images/clients-img1.png
   author_image_alt: Clients
   author_name: Paul Lapkin
   author_designation: CEO at DeviserWeb

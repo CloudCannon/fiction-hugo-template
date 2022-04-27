@@ -31,7 +31,7 @@ preview:
   heading:
     heading: Our specialized team
   team_members:
-    - image: images/team/team-pic1.jpg
+    - image: /images/team/team-pic1.jpg
       image_alt: Team img
       name: aurelien salomo
       job_title: Creative Director

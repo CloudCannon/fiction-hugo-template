@@ -28,7 +28,7 @@ preview:
     error ipsa repudiandae. Dolores eius eaque eum mollitia esse nisi
     necessitatibus distinctio ea, dolorem non, optio minima temporibus
     blanditiis, quidem aperiam!</p>
-  image: images/case-study/case-study-img1.png
+  image: /images/case-study/case-study-img1.png
 
 # Any extra CloudCannon inputs configuration to apply to the blueprint
 _inputs:

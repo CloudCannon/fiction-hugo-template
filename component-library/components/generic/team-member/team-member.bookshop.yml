@@ -22,7 +22,7 @@ blueprint:
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:
-  image: images/team/team-pic1.jpg
+  image: /images/team/team-pic1.jpg
   image_alt: Team img
   name: aurelien salomo
   job_title: Creative Director

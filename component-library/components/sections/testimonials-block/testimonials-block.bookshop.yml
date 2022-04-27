@@ -21,7 +21,7 @@ blueprint:
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:
-  background_image: images/slider/bg-3.jpg
+  background_image: /images/slider/bg-3.jpg
   heading:
     heading: Clients Opinion
   testimonials:
@@ -34,7 +34,7 @@ preview:
         nisi, maiores animi iste vel consectetur error facilis quae ducimus sint
         beatae vitae nesciunt explicabo esse nam. Soluta harum ipsa officia nam
         adipisci velit debitis! Dolore a ducimus, assumenda aspernatur fugit!
-      author_image: images/clients-img1.png
+      author_image: /images/clients-img1.png
       author_image_alt: Clients
       author_name: Paul Lapkin
       author_designation: CEO at DeviserWeb
