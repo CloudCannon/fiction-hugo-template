@@ -7,9 +7,6 @@ Paginate = 3
 [taxonomies]
 category = "categories"
 
-[permalinks]
-posts = ":section/:year/:month/:day/:title/"
-
 [module]
 replacements = "local/component-library -> ../component-library"
 

@@ -4,7 +4,11 @@
     <div class="container">
         <div class="row">
             <div class="text-center">
-                    {{ partial "bookshop" (slice "generic/heading" (dict "heading" (.Title | humanize))) }}
+                    {{ if .Params.heading }}
+                        {{ partial "bookshop" (slice "generic/heading" .Params.heading ) }}
+                    {{ else }}
+                        {{ partial "bookshop" (slice "generic/heading" (dict "heading" (.Title | humanize))) }}
+                    {{ end }}
             </div>
             <div class="col-md-9">
             {{ range $index, $element := .Paginator.Pages }}
@@ -38,7 +42,7 @@
                                         <p>{{ .Params.date.Format "02 Jan 2006" }}</p>
                                     </div>
                                     <div class="author">
-                                        <p>{{ .Params.author }}</p>
+                                        <p>By {{ .Params.author }}</p>
                                     </div>
                                 </div>
                                 <p class="{{if not (modBool $index 2)}}blog-description{{else}}blog-decisions{{end}}">{{ .Params.description }}</p>

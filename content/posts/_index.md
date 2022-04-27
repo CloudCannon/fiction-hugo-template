@@ -5,4 +5,7 @@ hero:
   subheading: We Ensure Quality Design.
   image: /images/header/blog-folding-img.jpg
 url: /blog/
+heading:
+  _bookshop_name: generic/heading
+  heading: Our Blog
 ---
