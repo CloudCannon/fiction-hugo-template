@@ -4,7 +4,7 @@ spec:
     - ""
   label: Pricing plan
   description: A single plan and its features
-  icon: 
+  icon: view_headline
   tags: []
 
 # Defines the structure of this component, as well as the default values

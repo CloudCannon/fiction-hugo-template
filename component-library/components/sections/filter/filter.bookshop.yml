@@ -2,8 +2,8 @@
 spec:
   structures:
     - content_blocks
-  label: Portfolio
-  description: Grid layout of portfolio items with filtering and heading
+  label: Filter buttons
+  description: Filtering buttons for portfolio items with heading
   icon: 
   tags: []
 

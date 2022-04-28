@@ -4,7 +4,7 @@ spec:
     - ""
   label: Plan feature
   description: Name of a feature included in a plan
-  icon: 
+  icon: view_headline
   tags: []
 
 # Defines the structure of this component, as well as the default values

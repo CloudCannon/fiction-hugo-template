@@ -4,7 +4,7 @@ spec:
     - ""
   label: Gallery Image
   description: Single image link
-  icon: 
+  icon: add_photo_alternate
   tags: []
 
 # Defines the structure of this component, as well as the default values

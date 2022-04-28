@@ -11,10 +11,9 @@ spec:
 blueprint:
   heading: ""
   content: ""
-  link:
-    url: ""
-    content: ""
+  link: bookshop:generic/link
   map: bookshop:generic/map
+  
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:
   heading: Get In Touch
@@ -22,9 +21,8 @@ preview:
     cum ad officia, harum, et voluptas quia vel voluptatem aliquam, facilis
     corporis nam tempore ullam doloribus iusto sequi ipsum. Fugiat non culpa ad
     beatae sed dolorem doloribus accusamus
-  link:
-    url: "#"
-    content: View More
+  link: bookshop:generic/link
+  map: bookshop:generic/map
 
 # Any extra CloudCannon inputs configuration to apply to the blueprint
 _inputs: {}

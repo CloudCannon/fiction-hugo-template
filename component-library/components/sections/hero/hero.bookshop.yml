@@ -4,7 +4,7 @@ spec:
     - content_blocks
   label: Hero
   description: Small hero for single page layouts
-  icon: 
+  icon: title
   tags: []
 
 # Defines the structure of this component, as well as the default values

@@ -3,7 +3,7 @@ spec:
   structures:
   label: Services
   description: Grid of icons with content
-  icon: 
+  icon: image
   tags: []
 
 # Defines the structure of this component, as well as the default values

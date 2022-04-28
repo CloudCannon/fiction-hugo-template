@@ -2,9 +2,9 @@
 spec:
   structures:
     - content_blocks
-  label: Services
-  description: Grid of icons with content
-  icon: 
+  label: Slider hero
+  description: Hero header with sliding images/text
+  icon: title
   tags: []
 
 # Defines the structure of this component, as well as the default values
@@ -13,7 +13,7 @@ blueprint:
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:
-  service: 
+  slider_items: 
    - bookshop:simple/slider-item
    - bookshop:simple/slider-item
    

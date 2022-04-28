@@ -3,7 +3,7 @@ spec:
   structures:
     - content_blocks
   label: Video hero
-  description: Video hero block
+  description: Hero header with video in background
   icon: title
   tags: []
 

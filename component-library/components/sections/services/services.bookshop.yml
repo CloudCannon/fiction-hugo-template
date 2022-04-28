@@ -4,7 +4,7 @@ spec:
     - content_blocks
   label: Services
   description: Grid of icons with content
-  icon: 
+  icon: view_module
   tags: []
 
 # Defines the structure of this component, as well as the default values

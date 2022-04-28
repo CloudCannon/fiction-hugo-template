@@ -4,7 +4,7 @@ spec:
     - ""
   label: Icon and content
   description: Content with supporting icon
-  icon: 
+  icon: image
   tags: []
 
 # Defines the structure of this component, as well as the default values

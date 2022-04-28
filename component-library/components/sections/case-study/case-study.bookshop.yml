@@ -10,14 +10,12 @@ spec:
 # Defines the structure of this component, as well as the default values
 blueprint:
   background: grey
-  heading:
-    heading: ""
+  heading: bookshop:generic/heading
   left_right_blocks: [bookshop:simple/left-right-block]
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:
-  heading:
-    heading: Case Study
+  heading: bookshop:generic/heading
   left_right_blocks: 
    - bookshop:simple/left-right-block
    

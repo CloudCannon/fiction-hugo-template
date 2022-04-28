@@ -4,7 +4,7 @@ spec:
     - content_blocks
   label: Contact form
   description: Form to submit contact details and a message
-  icon: 
+  icon: contact_mail
   tags: []
 
 # Defines the structure of this component, as well as the default values

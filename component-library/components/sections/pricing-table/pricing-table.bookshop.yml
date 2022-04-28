@@ -4,7 +4,7 @@ spec:
     - content_blocks
   label: Pricing table
   description: A table of different pricing plans available
-  icon: 
+  icon: view_column
   tags: []
 
 # Defines the structure of this component, as well as the default values

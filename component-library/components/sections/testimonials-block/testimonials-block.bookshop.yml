@@ -10,34 +10,16 @@ spec:
 # Defines the structure of this component, as well as the default values
 blueprint:
   background_image: ""
-  heading:
-    heading: ""
-  testimonials:
-    - content: ""
-      author_image: ""
-      author_image_alt: ""
-      author_name: ""
-      author_career: ""
+  heading: bookshop:generic/heading
+  testimonials: [bookshop:simple/testimonial]
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:
   background_image: /images/slider/bg-3.jpg
-  heading:
-    heading: Clients Opinion
+  heading: bookshop:generic/heading
   testimonials:
-    - content: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-        nonummy nibh euismod tincidunt ut laoreet dolore magna. ipsum dolor sit
-        amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
-        tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad
-        minim veniam. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-        Nemo vitae natus odio quasi recusandae, esse! Libero ipsum cum aliquid,
-        nisi, maiores animi iste vel consectetur error facilis quae ducimus sint
-        beatae vitae nesciunt explicabo esse nam. Soluta harum ipsa officia nam
-        adipisci velit debitis! Dolore a ducimus, assumenda aspernatur fugit!
-      author_image: /images/clients-img1.png
-      author_image_alt: Clients
-      author_name: Paul Lapkin
-      author_designation: CEO at DeviserWeb
+    - bookshop:simple/testimonial
+    - bookshop:simple/testimonial
 
 # Any extra CloudCannon inputs configuration to apply to the blueprint
 _inputs: {}
