@@ -11,7 +11,7 @@ menu:
     url: "/portfolio/"
     open_in_new_tab: false
   - name: "Our Team"
-    url: "#"
+    url: "/"
     open_in_new_tab: false
   - name: "Contact"
     url: "/contact/"
