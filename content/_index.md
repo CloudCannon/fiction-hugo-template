@@ -2,7 +2,8 @@
 title: Home
 content_blocks:
   - _bookshop_name: sections/big-hero
-    heading: We’re Creative <br>We Ensure Quality Design
+    heading: We’re Creative
+    subheading: We Ensure Quality Design
     background_image: /images/slider/bg-1.jpg
   - _bookshop_name: sections/case-study
     background: grey
