@@ -10,16 +10,16 @@ spec:
 # Defines the structure of this component, as well as the default values
 blueprint:
   heading: bookshop:generic/heading
-  team_members: [bookshop:generic/team-memeber]
+  team_members: [bookshop:generic/team-member]
   link: bookshop:generic/link
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:
   heading: bookshop:generic/heading
   team_members:
-    - bookshop:generic/team-memeber
-    - bookshop:generic/team-memeber
-    - bookshop:generic/team-memeber
+    - bookshop:generic/team-member
+    - bookshop:generic/team-member
+    - bookshop:generic/team-member
   link: bookshop:generic/link
 # Any extra CloudCannon inputs configuration to apply to the blueprint
 _inputs: {}
