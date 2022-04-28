@@ -13,4 +13,8 @@ social_media:
   instagram: "#"
 copyright_html: <p>&copy; 2013-2017 All rights reserved. <br>
                                 Design and Developed By <a href="https://themefisher.com">Themefisher.com</a></p>
-google_maps_api_key: "" #: Add your key if you want to use google maps features within the site
+google_maps_api_key: ""
+
+_inputs:
+  google_maps_api_key:
+    comment: Add your key if you want to use google maps features within the site
