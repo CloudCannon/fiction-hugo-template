@@ -1,5 +1,5 @@
 {{ $hero := (.Site.GetPage "section" "posts") }}
-{{ partial "hero" $hero }}
+{{ partial "bookshop" (slice "sections/hero" $hero.Params.hero ) }}
 <section class="blog">
     <div class="container">
         <div class="row">

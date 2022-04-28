@@ -1,10 +1,10 @@
 ---
 title: Contact
-hero:
-  heading: Contact Us.
-  subheading: We ensure Quality Design.
-  image: /images/header/contact-folding-img.jpg
 content_blocks:
+  - _bookshop_name: sections/hero
+    heading: Contact Us.
+    subheading: We ensure Quality Design.
+    image: /images/header/contact-folding-img.jpg
   - _bookshop_name: sections/map-and-details
     business_card:
       _bookshop_name: simple/business-card

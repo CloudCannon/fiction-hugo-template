@@ -1,13 +1,12 @@
 {{ define "main" }}
-  {{ $hero := (.Site.GetPage "section" "posts") }}
-  {{ partial "hero" $hero }}
+  {{ $page := (.Site.GetPage "section" "posts") }}
+  {{ partial "bookshop" (slice "sections/hero" $page.Params.hero ) }}
   <!-- Blog Sections 
     =========================-->
   <section class="blog-single">
     <div class="container">
       <div class="row">
-        {{ $heading := (.Site.GetPage "section" "posts") }}
-        {{ partial "bookshop" (slice "generic/heading" $heading.Params.heading ) }}
+        {{ partial "bookshop" (slice "generic/heading" $page.Params.heading ) }}
         <div class="col-md-9">
           <!-- Blog Left Sections 
                   =========================-->
