@@ -30,3 +30,14 @@ _inputs:
         - tf-strategy
         - tf-anchor2
         - tf-globe
+        - tf-desktop
+        - tf-laptop
+        - tf-book-open
+        - tf-picture
+        - tf-printer
+        - tf-wallet
+        - tf-attachment
+        - tf-tools
+        - tf-chat
+        - tf-dial
+        - tf-global
