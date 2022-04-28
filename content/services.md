@@ -52,6 +52,7 @@ content_blocks:
     pricing_plans:
       - _bookshop_name: simple/pricing-plan
         heading: Extended version
+        currency: '$'
         price: '89.00'
         plan_length: Month
         features:
@@ -66,6 +67,7 @@ content_blocks:
           content: Order Now
       - _bookshop_name: simple/pricing-plan
         heading: Standard version
+        currency: '$'
         price: '109.00'
         plan_length: Month
         features:
@@ -80,6 +82,7 @@ content_blocks:
           content: Order Now
       - _bookshop_name: simple/pricing-plan
         heading: Premium version
+        currency: '$'
         price: '300.00'
         plan_length: Month
         features:

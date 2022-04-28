@@ -13,9 +13,9 @@ blueprint:
   background: grey
   heading: ""
   content_html: ""
+  link: bookshop:generic/link
   image: ""
   image_alt: ""
-  link: bookshop:generic/link
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:

@@ -10,6 +10,7 @@ spec:
 # Defines the structure of this component, as well as the default values
 blueprint:
     heading: ''
+    currency: ''
     price: ''
     plan_length: ''
     features: [bookshop:simple/plan-feature]
@@ -18,6 +19,7 @@ blueprint:
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:
     heading: extended Version
+    currency: '$'
     price: '89.00'
     plan_length: Month
     features:
