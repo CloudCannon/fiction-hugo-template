@@ -2,3 +2,5 @@ collections_config:
   pages:
     _enabled_editors:
       - visual
+
+data_config: true
