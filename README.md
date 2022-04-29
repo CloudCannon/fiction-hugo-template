@@ -2,7 +2,7 @@
 
 Template for Hugo. Browse through a [live demo](https://cuddly-helicopter.cloudvent.net/). This theme has been adapted from the MIT licensed [Fiction Bootstrap template from Theme Fisher](https://themefisher.com/products/fiction-bootstrap-agency-template/)
 
-![Fiction template screenshot](/images/site/index-video)
+![Fiction template screenshot](images/_index-video.png)
 
 Fiction was made by [Themefisher](https://themefisher.com/) and converted to Hugo by [CloudCannon](https://cloudcannon.com/), a Jamstack platform for the whole team.
 
@@ -63,16 +63,16 @@ There are three different hero components that are designed be used at the top o
 
 This component uses a single image behind some heading text
 
-![Fiction template screenshot](/images/site/index-image)
+![Fiction template screenshot](images/_index-image.png)
 
 #### Slider hero
 
 This component uses any number of images behind some heading text
 
-![Fiction template screenshot](/images/site/index-slider)
+![Fiction template screenshot](images/_index-slider.png)
 
 #### Video hero
 
 This component uses a video behind some heading text
 
-![Fiction template screenshot](/images/site/index-video)
+![Fiction template screenshot](images/_index-video.png)
