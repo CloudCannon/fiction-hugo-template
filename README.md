@@ -57,7 +57,7 @@ To see more about getting an api key see the [documentation](https://developers.
 
 ### Hero component
 
-There are three different hero components that are designed be used at the top of the index page. They can be changed in the index page using [CloudCannon](https://app.cloudcannon.com/) live editing or locally.
+There are three different hero components that are designed to be used at the top of the index page. They can be changed in the index page using [CloudCannon](https://app.cloudcannon.com/) live editing or locally.
 
 #### Image hero
 
