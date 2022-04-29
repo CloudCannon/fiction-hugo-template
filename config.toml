@@ -5,7 +5,8 @@ title = 'fiction-hugo-template'
 Paginate = 3
 
 [taxonomies]
-category = "categories"
+categories = "categories"
+category = "category"
 
 [module]
 replacements = "local/component-library -> ../component-library"

@@ -71,3 +71,5 @@
         </div>
     </div>
 </section>
+{{ partial "bookshop_bindings" `.Params.content_blocks` }}
+{{ partial "bookshop_partial" (slice "page" .Params.content_blocks) }} 

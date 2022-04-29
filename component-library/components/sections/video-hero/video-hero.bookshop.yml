@@ -20,4 +20,7 @@ preview:
   background_video: /video/ocean
 
 # Any extra CloudCannon inputs configuration to apply to the blueprint
-_inputs: {}
+_inputs:
+  background_video:
+    type: file
+
