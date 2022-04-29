@@ -1,0 +1,5 @@
+<div class="hero-slider">
+    {{ range .slider_items }}
+        {{ partial "bookshop" (slice "simple/slider-item" . )}}
+    {{ end }}
+  </div>

@@ -1,0 +1,23 @@
+# Metadata about this component, to be used in the CMS
+spec:
+  structures:
+  label: Slider item
+  description: Image and text to be used inside hero slider
+  icon: image
+  tags: []
+
+# Defines the structure of this component, as well as the default values
+blueprint:
+  background_image: ""
+  heading: ""
+  subheading: ""
+  content: ""
+
+# Overrides any fields in the blueprint when viewing this component in the component browser
+preview:
+  background_image: /images/slider/bg-3.jpg
+  heading: A Creative Agency Template
+  content: Create just what you need for your Perfect Website. Choose from a wide range of Elements & simply put them on our Canvas.
+   
+# Any extra CloudCannon inputs configuration to apply to the blueprint
+_inputs:

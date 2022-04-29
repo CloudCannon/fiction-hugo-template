@@ -1,0 +1,14 @@
+  <!-- Pricing Table Sections 
+  =========================-->
+  <section class="pricing-table">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          {{ partial "bookshop" (slice "generic/heading" .heading )}}
+        </div>
+        {{ range .pricing_plans }}
+            {{ partial "bookshop" (slice "simple/pricing-plan" .)}}
+        {{ end }}
+      </div>
+    </div>
+  </section>

@@ -1,0 +1,39 @@
+<div class="contact-info">
+    <div class="contact-img">
+      <img src="{{ .image }}" alt="{{ .image_alt }}">
+    </div>
+    <div class="contact-content">
+      <div class="content-title-section">
+        <h3 class="content-title">{{ site.Data.company.company_name }}</h3>
+      </div>
+      <div class="home-address">
+        <div class="flex">
+          <div class="contact-icon">
+            <i class="tf-ion-ios-home-outline"></i>
+          </div>
+          <p class="ct-info">{{ site.Data.company.contact.address }}</p>
+        </div>
+      </div>
+      <div class="web-address">
+        <div class="flex">
+          <div class="contact-icon">
+            <i class="tf-global"></i>
+          </div>
+          <a href="{{ site.Data.company.contact.web_address }}" class="ct-info">{{ site.Data.company.contact.web_address }}</a>
+        </div>
+      </div>
+      <div class="phone-address">
+        <div class="flex">
+          <div class="contact-icon">
+            <i class="fa fa-phone" aria-hidden="true"></i>
+          </div>
+          <p class="ct-info">{{ site.Data.company.contact.mobile }}</p>
+        </div>
+      </div>
+      <div class="contact-protfolio">
+        {{ range .portfolio_images }}
+          <img src="{{ .image }}" alt="{{ .image_alt }}">
+        {{ end }}
+      </div>
+    </div>
+  </div>

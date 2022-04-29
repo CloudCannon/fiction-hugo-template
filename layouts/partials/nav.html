@@ -1,0 +1,29 @@
+{{ if ne .Page.Title "Components" }}
+<!-- Navigation -section
+  =========================-->
+<nav class="navbar navbar-fixed-top navigation">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand logo" href="/">
+                <img src="{{ .Site.Data.nav.logo.image }}" alt="{{ .Site.Data.nav.logo.alt }}">
+            </a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav navbar-right menu">
+              {{ range .Site.Data.nav.menu }}
+                <li><a href="{{ .url }}" {{ if .open_in_new_tab }}target="_blank"{{ end }}>{{ .name }}</a></li>
+              {{ end }}
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div>
+</nav>
+{{ end }}

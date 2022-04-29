@@ -80,6 +80,11 @@
 	}
 }
 
+.blog-single .blog-img .img-responsive {
+	max-width: 100%;
+	width: 100%;
+}
+
 /* Blog Right side Content */
 .blog-content-left{
 	.blog-content-area,
@@ -229,6 +234,12 @@
 }
 
 .blog-inner-heading{
+	padding-bottom: 16px;
+}
+
+.blog-content-description h5, .blog-content-description h6, .blog-content-description h4{
+	color: #afafaf;
+	font-family: $roboto;
 	padding-bottom: 16px;
 }
 

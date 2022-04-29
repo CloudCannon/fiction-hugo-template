@@ -1,0 +1,24 @@
+# Metadata about this component, to be used in the CMS
+spec:
+  structures:
+    - content_blocks
+  label: Gallery
+  description: Gallery of image links
+  icon: burst_mode
+  tags: []
+
+# Defines the structure of this component, as well as the default values
+blueprint:
+  content: ""
+  gallery_images: [bookshop:simple/gallery-image]
+
+# Overrides any fields in the blueprint when viewing this component in the component browser
+preview:
+  content: I had not long to wait before a stealthy sound apprised me of their nearness, and then a <br>war-bonneted, paint-streaked face was thrust cautiously around the shoulder of the cliff, and <br>savage eyes looked into mine. That he could see me in the dim light of the cave I was sure for <br>the early morning sun was falling full upon me through the opening.
+  gallery_images: 
+   - bookshop:simple/gallery-image
+   - bookshop:simple/gallery-image
+   - bookshop:simple/gallery-image
+   
+# Any extra CloudCannon inputs configuration to apply to the blueprint
+_inputs:

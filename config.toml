@@ -2,6 +2,11 @@ baseURL = 'http://example.org/'
 languageCode = 'en-us'
 title = 'fiction-hugo-template'
 
+Paginate = 3
+
+[taxonomies]
+category = "categories"
+
 [module]
 replacements = "local/component-library -> ../component-library"
 

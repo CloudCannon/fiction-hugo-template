@@ -1,0 +1,19 @@
+<div class="col-md-4">
+    <div class="table text-center">
+        <!-- pricing table
+      ===================== -->
+        <div class="table-price border-effect">
+            <h4 class="pricing-title">{{ .heading }}</h4>
+            <h2 class="price">{{ .currency }} {{ .price }}</h2>
+            <p class="table-month">/ {{ .plan_length }}</p>
+        </div>
+        <div class="pricing-list border-effect">
+            <ul class="features-list">
+                {{ range .features }}
+                    {{ partial "bookshop" (slice "simple/plan-feature" .)}}
+                {{ end }}
+            </ul>
+            {{ partial "bookshop" (slice "generic/button" .button )}}
+        </div>
+    </div>
+</div>

@@ -1,0 +1,18 @@
+  <!-- Team Sections
+  =========================-->
+  <section class="team">
+    <div class="container-fluid padding-0">
+    <!-- Team title -->
+    {{ partial "bookshop" (slice "generic/heading" .heading )}}
+    
+    {{ range .team_members }}
+      {{ partial "bookshop" (slice "generic/team-member" .)}}
+    {{ end }}
+    
+    <div class="col-md-12">
+      <div class="join-team text-center">
+        {{ partial "bookshop" (slice "generic/link" .link )}}
+      </div>
+    </div>
+    </div>
+  </section>

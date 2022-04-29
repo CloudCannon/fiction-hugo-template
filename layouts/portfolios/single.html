@@ -1,0 +1,50 @@
+{{ define "main" }}
+    {{ partial "bookshop" (slice "sections/hero" .Params.hero ) }}
+    <section class="portfolio-single">
+        <div class="container-fluid padding-0">
+            <div class="row margin-0">
+                <div class="title text-center">
+                    <h2>{{ .Params.hero.heading }}</h2>
+                </div>
+                <div class="flex">
+                    <div class="col-md-12 col-lg-6  padding-0">
+                        <img src="{{ .Params.image }}" alt="">
+                    </div>
+                    <div class="col-md-12 col-lg-6 portfolio-single-description padding-0">
+                        <div class="portfolio-single-info">
+                            <p class="date">{{ .Date.Format "02.01.2006" }}</p>
+                            <h3 class="portfolio-single-title">{{ .Params.title }}</h3>
+                            <div class="row margin-0">
+                                <div class="col-md-12 protfolio-list padding-0">
+                                    <div class="col-md-4 col-sm-6 padding-0">
+                                        <p>CLIENT</p>
+                                    </div>
+                                    <div class="col-md-8 col-sm-6 padding-0"><span class="colon">:</span>
+                                        <p>{{ .Params.client }}</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 protfolio-list padding-0">
+                                    <div class="col-md-4 col-sm-6 padding-0">
+                                        <p>SERVICES</p>
+                                    </div>
+                                    <div class="col-md-8 col-sm-6 padding-0"><span class="colon">:</span>
+                                        <p>{{ .Params.services }}</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 protfolio-list padding-0">
+                                    <div class="col-md-4 col-sm-6 padding-0">
+                                        <p>LAUNCH PROJECT</p>
+                                    </div>
+                                    <div class="col-md-8 col-sm-6 padding-0"><span class="colon">:</span><a
+                                            class="web-addres" href="{{ .Params.project_url }}" target="_blank">{{ .Params.project_url }}</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    {{ partial "bookshop_bindings" `.Params.content_blocks` }}
+    {{ partial "bookshop_partial" (slice "page" .Params.content_blocks) }}
+{{ end }}

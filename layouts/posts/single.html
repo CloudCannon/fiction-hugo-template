@@ -1,0 +1,62 @@
+{{ define "main" }}
+  {{ $page := (.Site.GetPage "section" "posts") }}
+  {{ partial "bookshop" (slice "sections/hero" $page.Params.hero ) }}
+  <!-- Blog Sections 
+    =========================-->
+  <section class="blog-single">
+    <div class="container">
+      <div class="row">
+        {{ partial "bookshop" (slice "generic/heading" $page.Params.heading ) }}
+        <div class="col-md-9">
+          <!-- Blog Left Sections 
+                  =========================-->
+          <!-- Single Blog Page Main Img
+            ============================== -->
+          {{ if gt ( .Params.images) 1 }}
+            <div id="blog-slider" class="blog-slider">
+              {{ range .Params.images }}
+                <div class="item">
+                  <div class="blog-img">
+                    <img class="img-responsive" src="{{ .image }}" alt="{{ .alt }}">
+                  </div>
+                </div>
+              {{ end }}
+            </div>
+          {{ else }}
+            {{ $image := index .Params.images 0}}
+            <div class="blog-img">
+              <img class="img-responsive" src="{{ $image.image }}" alt="{{ $image.alt }}">
+            </div>
+          {{end}}
+
+          <!-- Single Blog Page Main Content
+            ================================== -->
+          <div class="blog-single-content">
+            <div class="blog-content-description">
+              <h3><a class="blog-content-title" href="#">{{ .Params.title }}</a></h3>
+              <div class="meta">
+                <div class="date">
+                  <p>{{ .Params.date.Format "02 Jan 2006" }}</p>
+                </div>
+                <div class="author">
+                  <p>By {{ .Params.author }}</p>
+                </div>
+              </div>
+              <div class="blog-content-description">
+              {{ .Content | replaceRE "<p>" "<p class=\"blog-description\">" | replaceRE "<h4" "<div class=\"blog-content-description\"><h4" | replaceRE "</p>" "</p></div>" | safeHTML }}
+            </div>
+          </div><!-- End Single Blog Content -->
+
+          <!-- See All Post -->
+          <div class="col-md-12">
+            <div class="see-all-post text-center">
+              <a class="btn btn-default th-btn solid-btn" href="/blog/" role="button"><i class="fa fa-long-arrow-left"
+                  aria-hidden="true"></i> Back To All Posts </a>
+            </div>
+          </div>
+        </div>
+        {{ partial "blog-right-column" . }}
+      </div>
+    </div>
+  </section>
+{{ end }}

@@ -1,0 +1,20 @@
+company_name: REDCODDER SOLUTION
+contact:
+  address: "DeviserWeb 24/A,Jalalabad amborkhana amagnina, Sylhet."
+  phone: "+61 (0) 3 8366 6274"
+  mobile: 01771-299299
+  web_address: deviserweb.com
+  email: "info@info.com"
+social_media:
+  facebook: "#"
+  twitter: "#"
+  linkedin: "#"
+  google: "#"
+  instagram: "#"
+copyright_html: <p>&copy; 2013-2017 All rights reserved. <br>
+                                Design and Developed By <a href="https://themefisher.com">Themefisher.com</a></p>
+google_maps_api_key: ""
+
+_inputs:
+  google_maps_api_key:
+    comment: Add your key if you want to use google maps features within the site

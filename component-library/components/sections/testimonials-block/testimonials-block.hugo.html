@@ -1,0 +1,20 @@
+<!-- Clients Sections
+=========================-->
+<section class="clients" data-parallax="scroll" data-image-src="{{ .background_image }}">
+    <div class="section">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-12">
+            {{ partial "bookshop" (slice "generic/heading" .heading )}}
+            <div class="col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2 padding-0 slider-main">
+              <div class="testimonial-slider">
+                {{ range .testimonials }}
+                    {{ partial "bookshop" (slice "simple/testimonial" .)}}
+                {{ end }}
+              </div>
+            </div>
+          </div>
+        </div><!-- /.End row -->
+      </div>
+    </div>
+  </section>

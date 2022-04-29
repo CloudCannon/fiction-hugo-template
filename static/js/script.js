@@ -21,8 +21,11 @@
 
   // testimonial slider
   $('.testimonial-slider').slick({
+    infinite: true,
+    dots: true,
     arrows: false,
-    dots: false
+    autoplay: true,
+    fade: true
   });
 
 

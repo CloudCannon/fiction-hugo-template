@@ -1,0 +1,30 @@
+# Metadata about this component, to be used in the CMS
+spec:
+  structures:
+  label: Business card
+  description: Business details with images
+  icon: business
+  tags: []
+
+# Defines the structure of this component, as well as the default values
+blueprint:
+  image: ""
+  image_alt: ""
+  portfolio_images:
+    - image: ""
+      image_alt: ""
+
+# Overrides any fields in the blueprint when viewing this component in the component browser
+preview:
+  image: /images/contact/contact-img1.png
+  image_alt: "business image"
+  portfolio_images:
+    - image: "/images/contact/contact-img2.png"
+      image_alt: ""
+    - image: "/images/contact/contact-img3.png"
+      image_alt: ""
+    - image: "/images/contact/contact-img4.png"
+      image_alt: ""
+   
+# Any extra CloudCannon inputs configuration to apply to the blueprint
+_inputs: {}

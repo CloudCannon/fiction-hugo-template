@@ -1,0 +1,73 @@
+{{ $hero := (.Site.GetPage "section" "posts") }}
+{{ partial "bookshop" (slice "sections/hero" $hero.Params.hero ) }}
+<section class="blog">
+    <div class="container">
+        <div class="row">
+            {{ if .Params.heading }}
+                {{ partial "bookshop" (slice "generic/heading" .Params.heading ) }}
+            {{ else }}
+                {{ partial "bookshop" (slice "generic/heading" (dict "heading" (.Title | humanize))) }}
+            {{ end }}
+            <div class="col-md-9">
+            {{ range $index, $element := .Paginator.Pages }}
+                {{ if ne .File.BaseFileName "_defaults"}}
+                    <div class="blog-list-section {{if not (modBool $index 2)}}blog-content-left{{else}}blog-content-right{{end}} row">
+                        <div class="col-md-9 blog-content-area">
+                            <!-- Blog slider -->
+                            {{ if gt ( .Params.images) 1  }}
+                                <div id="blog-slider" class="blog-slider">
+                                    {{ range .Params.images }}
+                                    <div class="item">
+                                        <div class="blog-img">
+                                            <img class="img-responsive" src="{{ .image }}" alt="{{ .alt }}">
+                                        </div>
+                                    </div>
+                                    {{ end }}
+                                </div>
+                            {{ else }}
+                                {{ range .Params.images }}
+                                    <div class="blog-img">
+                                        <img class="img-responsive" src="{{ .image }}" alt="{{ .alt }}">
+                                    </div>
+                                {{end}}
+                            {{ end }}
+                            <div class="blog-content">
+                                <a href="{{ .RelPermalink }}">
+                                    <h4 class="blog-title">{{ .Params.title | safeHTML}}</h4>
+                                </a>
+                                <div class="meta">
+                                    <div class="date">
+                                        <p>{{ .Params.date.Format "02 Jan 2006" }}</p>
+                                    </div>
+                                    <div class="author">
+                                        <p>By {{ .Params.author }}</p>
+                                    </div>
+                                </div>
+                                <p class="{{if not (modBool $index 2)}}blog-description{{else}}blog-decisions{{end}}">{{ .Params.description }}</p>
+                                <a class="btn btn-default th-btn solid-btn" href="{{ .RelPermalink }}" role="button">{{ .Params.link.content }}
+                                    <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                {{end}}
+            {{end}}
+            {{ if gt (len (where .Site.Pages "Section" "posts")) 5 }}
+                <div class="col-md-12">
+                    <div class="see-all-post text-center">
+                    {{ if .Paginator.HasPrev }}
+                        <a class="btn btn-default th-btn solid-btn" href="{{ .Paginator.Prev.URL | relURL }}">Prev</a>
+                    {{ end }}
+                    <span aria-current="page" class="page-numbers current">
+                        {{ .Paginator.PageNumber }} of {{ .Paginator.TotalPages }}
+                    </span>
+                    {{ if .Paginator.HasNext }}
+                        <a class="btn btn-default th-btn solid-btn" href="{{ .Paginator.Next.URL | relURL }}">Next</a>
+                    {{ end }}
+                    </div>
+                </div>
+            {{ end }}
+            </div>
+            {{ partial "blog-right-column" . }}
+        </div>
+    </div>
+</section>

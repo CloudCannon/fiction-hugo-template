@@ -4,7 +4,7 @@ function initialize() {
   var map;
   var latitude = $('#map').attr('data-latitude');
   var longitude = $('#map').attr('data-longitude');
-  var nottingham = new google.maps.LatLng(latitude, longitude);
+  var location = new google.maps.LatLng(latitude, longitude);
   var style = [
     {elementType: 'geometry', stylers: [{color: '#242f3e'}]},
     {elementType: 'labels.text.stroke', stylers: [{color: '#242f3e'}]},
@@ -86,7 +86,7 @@ function initialize() {
     }
   ];
   var mapOptions = {
-    center: nottingham,
+    center: location,
     mapTypeId: google.maps.MapTypeId.ROADMAP,
     backgroundColor: "#000",
     zoom: 15,
@@ -106,12 +106,9 @@ function initialize() {
   });
   map.mapTypes.set('grey', mapType);
   map.setMapTypeId('grey');
-  var marker_image = '/plugins/google-map//images/marker.png';
-  var pinIcon = new google.maps.MarkerImage(marker_image, null, null, null, new google.maps.Size(46, 58));
   marker = new google.maps.Marker({
-    position: nottingham,
+    position: location,
     map: map,
-    icon: pinIcon,
     title: 'Fiction'
   });
 }

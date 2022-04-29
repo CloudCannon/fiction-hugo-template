@@ -1,0 +1,64 @@
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="container">
+                <div class="footer-top">
+                    <div class="col-md-4">
+                        <!-- footer About section
+                        ========================== -->
+                        <div class="footer-about">
+                            <h3 class="footer-title">About</h3>
+                            <p>{{ .Site.Data.footer.about.content }}</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <!-- footer Address section
+                        ========================== -->
+                        <div class="footer-address">
+                            <h3 class="footer-title">Address</h3>
+                            <p>{{ .Site.Data.company.contact.address }}</p>
+                            <p class="contact-address">
+                                {{ $phone := replaceRE "(\\s)" "" .Site.Data.company.contact.phone }}
+                                Contact us : <a href="tel:{{ $phone }}">{{ .Site.Data.company.contact.phone }}</a> <br>
+                                Write us : <a href="mailto:{{ .Site.Data.company.contact.email }}">{{ .Site.Data.company.contact.email }}</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <!-- footer Media link section
+                        ========================== -->
+                        <div class="footer-social-media">
+                            <h3 class="footer-title">Keep in touch</h3>
+                            <ul class="footer-media-link">
+                                <li><a href="{{ .Site.Data.company.social_media.facebook }}"><i class="tf-ion-social-facebook" aria-hidden="true"></i></a></li>
+                                <li><a href="{{ .Site.Data.company.social_media.twitter }}"><i class="tf-ion-social-twitter" aria-hidden="true"></i></a></li>
+                                <li><a href="{{ .Site.Data.company.social_media.linkedin }}"><i class="tf-ion-social-linkedin-outline" aria-hidden="true"></i></a>
+                                </li>
+                                <li><a href="{{ .Site.Data.company.social_media.google }}"><i class="tf-ion-social-google-outline" aria-hidden="true"></i></a>
+                                </li>
+                                <li><a href="{{ .Site.Data.company.social_media.instagram }}"><i class="tf-ion-social-instagram-outline" aria-hidden="true"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-nav text-center">
+                    <div class="col-md-12">
+                        <ul>
+                            {{ range .Site.Data.footer.menu }}
+                                <li><a href="{{ .url }}" {{ if .open_in_new_tab }}target="_blank"{{ end }}>{{ .name }}</a></li>
+                            {{ end }}
+                        </ul>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <div class="col-md-12">
+                        <div class="copyright">
+                            {{ .Site.Data.company.copyright_html | safeHTML }}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>

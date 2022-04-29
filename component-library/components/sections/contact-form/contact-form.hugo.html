@@ -1,0 +1,32 @@
+<!-- Contact From Study Sections 
+    =========================-->
+<section class="contact-form">
+    <div class="container">
+        <div class="row">
+            {{ partial "bookshop" (slice "generic/heading" .heading )}}
+            <form class="" method="post">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Subject">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control" placeholder="Email">
+                    </div>
+                    <div class="form-group margin-0">
+                        <input type="text" class="form-control" placeholder="Name">
+                    </div>
+                </div>
+                <div class="col-md-6 margin-0">
+                    <div class="form-group">
+                        <textarea class="form-control " rows="3" placeholder="Message"></textarea>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="contact-btn text-center">
+                        <input class="btn btn-default btn-main" type="submit" value="{{ .button_content }}">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>

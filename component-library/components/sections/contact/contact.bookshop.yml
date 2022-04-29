@@ -1,0 +1,28 @@
+# Metadata about this component, to be used in the CMS
+spec:
+  structures:
+    - content_blocks
+  label: Contact
+  description: Map and contact information
+  icon: call
+  tags: []
+
+# Defines the structure of this component, as well as the default values
+blueprint:
+  heading: ""
+  content: ""
+  link: bookshop:generic/link
+  map: bookshop:generic/map
+  
+# Overrides any fields in the blueprint when viewing this component in the component browser
+preview:
+  heading: Get In Touch
+  content: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero fugiat
+    cum ad officia, harum, et voluptas quia vel voluptatem aliquam, facilis
+    corporis nam tempore ullam doloribus iusto sequi ipsum. Fugiat non culpa ad
+    beatae sed dolorem doloribus accusamus
+  link: bookshop:generic/link
+  map: bookshop:generic/map
+
+# Any extra CloudCannon inputs configuration to apply to the blueprint
+_inputs: {}

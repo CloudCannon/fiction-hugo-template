@@ -1,0 +1,22 @@
+<!-- Case Study Description
+      top section -->
+<div class="case-study-content left-right-block--{{ .background }} left-right-block--{{ .image_alignment }}">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <!-- inner sub-title -->
+                <div class="content">
+                    <h4 class="inner-title"> {{ .heading }}</h4>
+                    <p class="case-description">{{ .content_html | safeHTML }}</p>
+                    <!-- View More Details -->
+                    {{ partial "bookshop" (slice "generic/link" .link )}}
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="img-content">
+                    <img class="img-responsive" src="{{ .image }}" alt="{{ .image_alt }}">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
