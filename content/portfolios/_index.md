@@ -10,15 +10,5 @@ filter:
   _bookshop_name: sections/filter
   heading:
     heading: Our Portfolio
-  buttons:
-    - _bookshop_name: generic/filter-button
-      content: branding
-      category: category-1
-    - _bookshop_name: generic/filter-button
-      content: User interface
-      category: category-2
-    - _bookshop_name: generic/filter-button
-      content: print design
-      category: category-3
 content_blocks:
 ---

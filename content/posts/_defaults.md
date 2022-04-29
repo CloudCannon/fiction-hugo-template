@@ -6,7 +6,6 @@ hero:
 images:
   - image: 
     image_alt:
-video: "" #: If no video, leave blank
 title: 
 date: 
 author: 
