@@ -22,7 +22,8 @@
         {{ $css := $css | resources.Minify | resources.Fingerprint }} 
     {{ end }} 
     <link rel="stylesheet" href="{{ $css.Permalink }}" />
-
+    <!-- slick slider -->
+    <script src="/plugins/slick/slick.min.js" defer></script>
     <style>
         /* Always set the map height explicitly to define the size of the div
          * element that contains the map. */
