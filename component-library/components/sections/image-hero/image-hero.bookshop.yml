@@ -2,8 +2,8 @@
 spec:
   structures:
     - content_blocks
-  label: Big hero
-  description: Big hero block
+  label: Image hero
+  description: Hero block with single image in background
   icon: title
   tags: []
 
