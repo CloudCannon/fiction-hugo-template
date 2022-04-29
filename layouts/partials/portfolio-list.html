@@ -3,8 +3,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                {{ partial "bookshop_bindings" `.Params.content_blocks` }}
-                {{ partial "bookshop_partial" (slice "page" .Params.content_blocks) }} 
+                {{ partial "bookshop" (slice "sections/filter" .Params.filter ) }}
                 <div id="Container" class="filtr-container row">
                     {{ range (.Paginator (len (where .Site.Pages "Section" "portfolios"))).Pages }}
                         {{ if ne .File.BaseFileName "_defaults"}}
@@ -31,3 +30,5 @@
         </div>
     </div>
 </section>
+{{ partial "bookshop_bindings" `.Params.content_blocks` }}
+{{ partial "bookshop_partial" (slice "page" .Params.content_blocks) }} 
