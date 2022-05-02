@@ -24,7 +24,7 @@ Get a workflow going to see your site's output (with [CloudCannon](https://app.c
 
 ## Develop
 
-Megakit was built with [Hugo](https://gohugo.io/) version `0.96.0`, but should support newer versions as well.
+Fiction was built with [Hugo](https://gohugo.io/) version `0.96.0`, but should support newer versions as well.
 ### Prerequisites
 * Hugo [install](https://gohugo.io/getting-started/installing/). `brew install hugo`
 * Go [install](https://go.dev/learn/). `brew install go`
