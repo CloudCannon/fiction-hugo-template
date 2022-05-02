@@ -22,7 +22,7 @@
         {{ $css := $css | resources.Minify | resources.Fingerprint }} 
     {{ end }} 
     <link rel="stylesheet" href="{{ $css.Permalink }}" />
-    
+  
     <script src="/plugins/jquery.min.js"></script>
 
     <script src="/plugins/bootstrap/bootstrap.min.js"></script>

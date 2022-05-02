@@ -34,6 +34,8 @@
     dots: true,
     autoplay: true
   });
+  
+  $(".filtr-item").slick("refresh");
 
 
 
