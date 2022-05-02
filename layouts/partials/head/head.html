@@ -22,13 +22,13 @@
         {{ $css := $css | resources.Minify | resources.Fingerprint }} 
     {{ end }} 
     <link rel="stylesheet" href="{{ $css.Permalink }}" />
-
+  
     <script src="/plugins/jquery.min.js"></script>
 
     <script src="/plugins/bootstrap/bootstrap.min.js"></script>
     <!-- slick slider -->
     <script src="/plugins/slick/slick.min.js"></script>
-  
+
     <style>
         /* Always set the map height explicitly to define the size of the div
          * element that contains the map. */
