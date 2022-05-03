@@ -5,7 +5,7 @@
             <div class="col-md-12">
                 {{ partial "bookshop" (slice "generic/heading" (dict "heading" "Our Portfolio") ) }}
                 <div class="protfolio-mixitup-btn text-center">
-                    <button class="filter btn btn-default btn-main active" data-filter="all">all</button>
+                    <button class="filter btn btn-default btn-main active" onclick="filterSelection('all')">all</button>
                     {{range $name, $taxonomy := .Site.Taxonomies.category}}
                         {{ partial "bookshop" (slice "generic/filter-button" (dict "category" $name )) }}
                     {{end}}
@@ -13,7 +13,7 @@
                 <div id="Container" class="filtr-container row">
                     {{ range (.Paginator (len (where .Site.Pages "Section" "portfolios"))).Pages }}
                         {{ if ne .File.BaseFileName "_defaults"}}
-                            <div class="filtr-item col-md-4 col-sm-6 col-xs-12" data-category="{{ .Params.category }}">
+                            <div class="filtr-item col-md-4 col-sm-6 col-xs-12 {{ .Params.category }} show">
                                 <div class="portfolio-list">
                                     <a href="{{ .RelPermalink }}">
                                         <div class="th-mouse-portfolio-card">
