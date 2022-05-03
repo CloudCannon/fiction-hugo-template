@@ -61,15 +61,30 @@
     // mouse hover effect
     // filter
     $(document).ready(function () {
-      var containerEl = document.querySelector('.filtr-container');
-      var filterizd;
-      if (containerEl) {
-        filterizd = $('.filtr-container').filterizr({});
-      }
       //Active changer
       $('.filter').on('click', function () {
         $('.filter').removeClass('active');
         $(this).addClass('active');
+
+
+        let filterCategory = this.getAttribute('data-filter');
+        let hide = document.querySelectorAll(`.filtr-container .filtr-item:not([data-category='${filterCategory}'])`);
+        let show = document.querySelectorAll(`.filtr-container [data-category='${filterCategory}']`);
+
+        if (filterCategory == 'all') {
+          hide = [];
+          show = document.querySelectorAll('.filtr-item');
+        }
+
+        hide.forEach(portfolioItem => {
+          portfolioItem.classList.add('hide');
+          portfolioItem.classList.remove('show');
+        });
+
+        show.forEach(portfolioItem => {
+          portfolioItem.classList.remove('hide');
+          portfolioItem.classList.add('show'); 
+        });
       });
     });
 

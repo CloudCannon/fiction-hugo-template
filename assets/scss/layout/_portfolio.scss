@@ -16,6 +16,14 @@
 		}
 	}
 
+	.hide {
+		display: none;
+	}
+
+	.show {
+		display: inline-block;
+	}
+	
 	.portfolio-caption{
 		background:$primary-color;
 		padding: 20px 23px !important;
