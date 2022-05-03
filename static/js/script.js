@@ -63,6 +63,7 @@
     // mouse hover effect
     // filter
     $(document).ready(function () {
+      $( "img" ).load(function() {
       var containerEl = document.querySelector('.filtr-container');
       var filterizd;
       if (containerEl) {
@@ -72,6 +73,7 @@
       $('.filter').on('click', function () {
         $('.filter').removeClass('active');
         $(this).addClass('active');
+      });
       });
     });
 
