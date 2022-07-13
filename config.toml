@@ -8,6 +8,9 @@ Paginate = 3
 categories = "categories"
 category = "category"
 
+[markup.goldmark.renderer]
+unsafe = true
+
 [module]
 replacements = "local/component-library -> ../component-library"
 
