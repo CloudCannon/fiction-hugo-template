@@ -12,7 +12,6 @@
                 </div>
                 <div id="Container" class="filtr-container row">
                     {{ range (.Paginator (len (where .Site.Pages "Section" "portfolios"))).Pages }}
-                        {{ if ne .File.BaseFileName "_defaults"}}
                             <div class="filtr-item col-md-4 col-sm-6 col-xs-12" data-category="{{ .Params.category }}">
                                 <div class="portfolio-list">
                                     <a href="{{ .RelPermalink }}">
@@ -29,7 +28,6 @@
                                     </a>
                                 </div>
                             </div>
-                        {{end}}
                     {{end}}
                 </div>
             </div>
