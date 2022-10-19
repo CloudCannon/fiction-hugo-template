@@ -1,0 +1,7 @@
+{
+    "ssg": "hugo",
+    "build_configuration": {
+        "destination": "public",
+        "base_url": "/"
+    }
+}
