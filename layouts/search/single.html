@@ -1,0 +1,20 @@
+{{ define "main" }}
+    <!-- Loop through any structures in the front-matter and render them -->
+    {{ partial "bookshop_bindings" `.Params.content_blocks` }}
+    {{ partial "bookshop_partial" (slice "page" .Params.content_blocks) }}
+
+    <section class="search-page">
+        <div class="container">
+            <div class="row">
+            <link href="/_pagefind/pagefind-ui.css" rel="stylesheet">
+            <script src="/_pagefind/pagefind-ui.js" type="text/javascript"></script>
+            <div id="search"></div>
+            <script>
+                window.addEventListener('DOMContentLoaded', (event) => {
+                    new PagefindUI({ element: "#search" });
+                });
+            </script>
+            </div>
+            </div>
+    </section>
+{{ end }}

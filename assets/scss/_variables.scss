@@ -29,4 +29,11 @@ $service-bg: #171717;
 /* blog slider pagination img */
 $blog-owl-buttons:#3c3c3c;
 
-
+body {
+--pagefind-ui-primary: #facd8a;
+--pagefind-ui-text: rgba(255, 255, 255, 0.8);
+--pagefind-ui-background: #111111;
+--pagefind-ui-border: #facd8a;
+--pagefind-ui-tag: #facd8a;
+--pagefind-ui-font: "roboto", sans-serif;
+}

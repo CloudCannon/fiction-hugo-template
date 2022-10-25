@@ -13,7 +13,10 @@
     "javascript": "esbuild assets/js/index.js --bundle --outfile=assets/js/build.js",
     "bookshop": "npx @bookshop/browser@latest",
     "bookshop-update": "npx @bookshop/up@latest",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "fix-hugo": "hugo mod clean",
+    "pagefind": "npx -y pagefind@v0.7.1 -s public --bundle-dir ../static/_pagefind",
+    "remove-pagefind": "rm -r static/_pagefind",
+    "refresh-pagefind": "run-s build remove-pagefind pagefind"
   },
   "repository": {
     "type": "git",
