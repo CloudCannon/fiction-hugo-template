@@ -1,12 +1,12 @@
-{{ partial "bookshop_bindings" `(dict "live_render" false)` }}
-{{ partial "bookshop" (slice "sections/hero" .Params.hero ) }}
+{{ partial "bookshop_bindings" `.Params.hero_blocks` }}
+{{ partial "bookshop_partial" (slice "page" .Params.hero_blocks) }} 
 
 <section class="portfolio">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                {{ partial "bookshop_bindings" `(dict "live_render" false)` }}
-                {{ partial "bookshop" (slice "generic/heading" (dict "heading" "Our Portfolio") ) }}
+                {{ partial "bookshop_bindings" `.Params.content_blocks` }}
+                {{ partial "bookshop_partial" (slice "page" .Params.content_blocks) }} 
                 <div class="protfolio-mixitup-btn text-center">
                     <button class="filter btn btn-default btn-main active" data-filter="all">all</button>
                     {{range $name, $taxonomy := .Site.Taxonomies.category}}
@@ -38,5 +38,3 @@
         </div>
     </div>
 </section>
-{{ partial "bookshop_bindings" `.Params.content_blocks` }}
-{{ partial "bookshop_partial" (slice "page" .Params.content_blocks) }} 
