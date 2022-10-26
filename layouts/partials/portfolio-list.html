@@ -5,6 +5,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
+                {{ partial "bookshop_bindings" `(dict "live_render" false)` }}
                 {{ partial "bookshop" (slice "generic/heading" (dict "heading" "Our Portfolio") ) }}
                 <div class="protfolio-mixitup-btn text-center">
                     <button class="filter btn btn-default btn-main active" data-filter="all">all</button>
