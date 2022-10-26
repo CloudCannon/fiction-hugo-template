@@ -1,11 +1,15 @@
 {{ $hero := (.Site.GetPage "section" "posts") }}
+{{ partial "bookshop_bindings" `(dict "live_render" false)` }}
 {{ partial "bookshop" (slice "sections/hero" $hero.Params.hero ) }}
+
 <section class="blog">
     <div class="container">
         <div class="row">
             {{ if .Params.heading }}
+                {{ partial "bookshop_bindings" `(dict "live_render" false)` }}
                 {{ partial "bookshop" (slice "generic/heading" .Params.heading ) }}
             {{ else }}
+                {{ partial "bookshop_bindings" `(dict "live_render" false)` }}
                 {{ partial "bookshop" (slice "generic/heading" (dict "heading" (.Title | humanize))) }}
             {{ end }}
             <div class="col-md-9">

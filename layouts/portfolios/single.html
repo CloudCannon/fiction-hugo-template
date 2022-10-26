@@ -1,4 +1,5 @@
 {{ define "main" }}
+    {{ partial "bookshop_bindings" `(dict "live_render" false)` }}
     {{ partial "bookshop" (slice "sections/hero" .Params.hero ) }}
     <section class="portfolio-single">
         <div class="container-fluid padding-0">
