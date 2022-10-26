@@ -1,8 +1,5 @@
 collections_config:
   pages:
-    schemas:
-      default:
-        path: schemas/page.md
     _enabled_editors:
       - visual
   portfolios:
