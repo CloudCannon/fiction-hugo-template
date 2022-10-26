@@ -1,11 +1,11 @@
 {{ define "main" }}
-    {{ partial "bookshop_bindings" `(dict "live_render" false)` }}
-    {{ partial "bookshop" (slice "sections/hero" .Params.hero ) }}
+    {{ partial "bookshop_bindings" `.Params.hero_blocks` }}
+    {{ partial "bookshop_partial" (slice "page" .Params.hero_blocks) }} 
     <section class="portfolio-single">
         <div class="container-fluid padding-0">
             <div class="row margin-0">
                 <div class="title text-center">
-                    <h2>{{ .Params.hero.heading }}</h2>
+                    <h2>{{ .Params.heading }}</h2>
                 </div>
                 <div class="flex">
                     <div class="col-md-12 col-lg-6  padding-0">
