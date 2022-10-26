@@ -24,7 +24,7 @@
                         <a href="{{ .RelPermalink }}" class="list-group-item">
                             <div class="media">
                                 <div class="media-left media-middle">
-                                    <p class="post-count">{{ $index }}</p>
+                                    <p class="post-count">{{ add $index 1 }}</p>
                                 </div>
                                 <div class="media-body">
                                     <p>{{ .Params.Title }}</p>
