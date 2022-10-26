@@ -10,7 +10,6 @@
             {{ end }}
             <div class="col-md-9">
             {{ range $index, $element := .Paginator.Pages }}
-                {{ if ne .File.BaseFileName "_defaults"}}
                     <div class="blog-list-section {{if not (modBool $index 2)}}blog-content-left{{else}}blog-content-right{{end}} row">
                         <div class="col-md-9 blog-content-area">
                             <!-- Blog slider -->
@@ -49,7 +48,6 @@
                             </div>
                         </div>
                     </div>
-                {{end}}
             {{end}}
             {{ if gt (len (where .Site.Pages "Section" "posts")) 5 }}
                 <div class="col-md-12">

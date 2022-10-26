@@ -37,7 +37,7 @@ Fiction was built with [Hugo](https://gohugo.io/) version `0.96.0`, but should s
 
 ## Editing
 
-Megakit is set up for adding, updating and removing pages, components, posts, portfolio items, company details and footer elements in [CloudCannon](https://app.cloudcannon.com/).
+Fiction is set up for adding, updating and removing pages, components, posts, portfolio items, company details and footer elements in [CloudCannon](https://app.cloudcannon.com/).
 
 ### Company details
 

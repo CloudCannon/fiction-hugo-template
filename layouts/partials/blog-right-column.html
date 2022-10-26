@@ -26,7 +26,7 @@
                     Related Posts
                 </div>
                 {{ range $index, $element := ( first 5 ( where .Site.Pages "Section" "posts" ).ByDate ) }}
-                    {{ if and (ne .File.BaseFileName "_defaults") (ne .File.BaseFileName "_index")}}
+                    {{ if ne .File.BaseFileName "_index"}}
                         <a href="{{ .RelPermalink }}" class="list-group-item">
                             <div class="media">
                                 <div class="media-left media-middle">
