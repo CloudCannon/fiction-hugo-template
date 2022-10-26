@@ -1,6 +1,6 @@
 # Fiction
 
-Template for Hugo. Browse through a [live demo](https://scenic-sea.cloudvent.net/). This theme has been adapted from the MIT licensed [Fiction Bootstrap template from Theme Fisher](https://themefisher.com/products/fiction-bootstrap-agency-template/)
+Template for Hugo. Browse through a [live demo](https://scenic-sea.cloudvent.net/). This theme has been adapted from the MIT-licensed [Fiction Bootstrap template from Theme Fisher](https://themefisher.com/products/fiction-bootstrap-agency-template/).
 
 ![Fiction template screenshot](images/_index-video.png)
 
