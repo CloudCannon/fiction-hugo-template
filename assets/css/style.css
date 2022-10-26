@@ -165,10 +165,6 @@ button:hover, button:focus {
 }
 
 /* Search bar */
-.search {
-  padding: 20px 10px;
-}
-
 .form-inline {
   position: relative;
 }
