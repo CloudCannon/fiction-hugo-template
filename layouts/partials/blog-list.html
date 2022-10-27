@@ -14,6 +14,7 @@
                 {{ partial "bookshop_bindings" `.Params.content_blocks` }}
                 {{ partial "bookshop_partial" (slice "page" .Params.content_blocks) }} 
             {{ else }}
+                {{ partial "bookshop_bindings" `(dict "live_render" false)` }}
                 {{ partial "bookshop" (slice "generic/heading" (dict "heading" (.Title | humanize))) }}
             {{ end }}
             <div class="col-md-9">
