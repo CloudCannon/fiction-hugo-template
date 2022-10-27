@@ -4,7 +4,7 @@ hero_blocks:
     heading: Our Portfolio.
     subheading: We Ensure Quality Design.
     image: /images/header/portfolio-folding-img.jpg
-heading:
+heading: Our Portfolio
 category: 
 image: 
 image_alt: 
