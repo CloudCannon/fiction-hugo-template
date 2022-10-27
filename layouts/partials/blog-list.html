@@ -1,5 +1,11 @@
-{{ partial "bookshop_bindings" `.Params.hero_blocks` }}
-{{ partial "bookshop_partial" (slice "page" .Params.hero_blocks) }} 
+{{ if .Params.hero_blocks }}
+    {{ partial "bookshop_bindings" `.Params.hero_blocks` }}
+    {{ partial "bookshop_partial" (slice "page" .Params.hero_blocks) }} 
+{{ else }}
+    {{ $hero := (.Site.GetPage "section" "posts") }}
+    {{ partial "bookshop_bindings" `(dict "live_render" false)` }}
+    {{ partial "bookshop_partial" (slice "page" $hero.Params.hero_blocks) }} 
+{{ end }}
 
 <section class="blog">
     <div class="container">
