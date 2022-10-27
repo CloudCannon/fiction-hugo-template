@@ -10,8 +10,12 @@
 <section class="blog">
     <div class="container">
         <div class="row">
-            {{ partial "bookshop_bindings" `.Params.content_blocks` }}
-            {{ partial "bookshop_partial" (slice "page" .Params.content_blocks) }} 
+            {{ if .Params.content_blocks }}
+                {{ partial "bookshop_bindings" `.Params.content_blocks` }}
+                {{ partial "bookshop_partial" (slice "page" .Params.content_blocks) }} 
+            {{ else }}
+                {{ partial "bookshop" (slice "generic/heading" (dict "heading" (.Title | humanize))) }}
+            {{ end }}
             <div class="col-md-9">
             {{ range $index, $element := .Paginator.Pages }}
                     <div class="blog-list-section {{if not (modBool $index 2)}}blog-content-left{{else}}blog-content-right{{end}} row">
