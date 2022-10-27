@@ -33,5 +33,11 @@
       </style>
     <script src="/plugins/modernizr.min.js"></script>
 
-    <title>{{ print .Page.Title " | " .Site.Title }}</title>
+    <title>{{ .Page.Title }} | {{ .Site.Data.company.SEO.site_title }}</title>
+
+    {{ if eq .Url "/" }}
+      <meta name="description" content="{{ .Site.Data.company.SEO.description }}" />
+    {{- else -}}
+      <meta name="description" content="{{ .Params.seo_description }}" />
+    {{- end }}
 </head>

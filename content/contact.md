@@ -1,5 +1,6 @@
 ---
 title: Contact
+seo_description: How to contact us
 content_blocks:
   - _bookshop_name: sections/hero
     heading: Contact Us.

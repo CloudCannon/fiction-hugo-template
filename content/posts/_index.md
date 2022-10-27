@@ -1,5 +1,6 @@
 ---
 title: Blog
+seo_description: Landing page for all blog posts
 url: /blog/
 hero_blocks:
   - _bookshop_name: sections/hero

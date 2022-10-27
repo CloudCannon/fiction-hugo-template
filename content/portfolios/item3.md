@@ -24,4 +24,5 @@ content_blocks:
         image: /images/portfolio/single-portfolio-img3.jpg
       - _bookshop_name: simple/gallery-image
         image: /images/portfolio/single-portfolio-img4.jpg
+seo_description: Portfolio 3, Merit wogmonk
 ---

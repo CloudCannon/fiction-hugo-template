@@ -18,4 +18,5 @@ content_blocks:
   - _bookshop_name: sections/gallery
     content: 
     gallery_images: 
+seo_description:
 ---

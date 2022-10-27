@@ -1,5 +1,6 @@
 ---
 title: Services
+seo_description: The services that we offer
 content_blocks:
   - _bookshop_name: sections/hero
     heading: Our Services.

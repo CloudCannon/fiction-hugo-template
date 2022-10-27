@@ -1,5 +1,6 @@
 ---
 title: Home
+seo_description: Fiction homepage
 content_blocks:
   - _bookshop_name: sections/video-hero
     heading: We’re Creative

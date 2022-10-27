@@ -1,5 +1,6 @@
 ---
 title: Portfolio
+seo_description: Landing page for all portfolio items
 url: /portfolio/
 hero_blocks:
   - _bookshop_name: sections/hero
