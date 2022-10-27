@@ -19,8 +19,7 @@
                 <div class="list-group-item active text-center">
                     Related Posts
                 </div>
-                {{ range $index, $element := ( first 5 ( where .Site.Pages "Section" "posts" ).ByDate ) }}
-                    {{ if ne .File.BaseFileName "_index"}}
+                {{ range $index, $element := ( first 5 ( where .Site.RegularPages "Section" "posts" ).ByDate ) }}
                         <a href="{{ .RelPermalink }}" class="list-group-item">
                             <div class="media">
                                 <div class="media-left media-middle">
@@ -31,7 +30,6 @@
                                 </div>
                             </div>
                         </a>
-                    {{ end }}
                 {{ end }}
             </div>
         </div>
