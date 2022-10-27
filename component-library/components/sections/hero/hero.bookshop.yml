@@ -2,6 +2,7 @@
 spec:
   structures:
     - content_blocks
+    - hero_blocks
   label: Hero
   description: Small hero for single page layouts
   icon: title

@@ -1,14 +1,13 @@
 {{ define "main" }}
-  {{ $page := (.Site.GetPage "section" "posts") }}
-  {{ partial "bookshop_bindings" `(dict "live_render" false)` }}
-  {{ partial "bookshop" (slice "sections/hero" $page.Params.hero ) }}
+  {{ partial "bookshop_bindings" `.Params.hero_blocks` }}
+  {{ partial "bookshop_partial" (slice "page" .Params.hero_blocks) }} 
   <!-- Blog Sections 
     =========================-->
   <section class="blog-single">
     <div class="container">
       <div class="row">
-        {{ partial "bookshop_bindings" `(dict "live_render" false)` }}
-        {{ partial "bookshop" (slice "generic/heading" $page.Params.heading ) }}
+        {{ partial "bookshop_bindings" `.Params.content_blocks` }}
+        {{ partial "bookshop_partial" (slice "page" .Params.content_blocks) }} 
         <div class="col-md-9">
           <!-- Blog Left Sections 
                   =========================-->

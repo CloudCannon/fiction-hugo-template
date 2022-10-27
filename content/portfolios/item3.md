@@ -1,9 +1,10 @@
 ---
-hero:
-  heading: Our Portfolio.
-  subheading: We Ensure Quality Design.
-  image: /images/header/portfolio-folding-img.jpg
-_bookshop_name: simple/portfolio-item
+hero_blocks:
+  - _bookshop_name: sections/hero
+    heading: Our Portfolio.
+    subheading: We Ensure Quality Design.
+    image: /images/header/portfolio-folding-img.jpg
+heading: Our Portfolio
 category: category-3
 image: /images/portfolio/portfolio-img3.jpg
 image_alt: Portfolio

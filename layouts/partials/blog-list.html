@@ -1,13 +1,18 @@
-{{ $hero := (.Site.GetPage "section" "posts") }}
-{{ partial "bookshop_bindings" `(dict "live_render" false)` }}
-{{ partial "bookshop" (slice "sections/hero" $hero.Params.hero ) }}
+{{ if .Params.hero_blocks }}
+    {{ partial "bookshop_bindings" `.Params.hero_blocks` }}
+    {{ partial "bookshop_partial" (slice "page" .Params.hero_blocks) }} 
+{{ else }}
+    {{ $hero := (.Site.GetPage "section" "posts") }}
+    {{ partial "bookshop_bindings" `(dict "live_render" false)` }}
+    {{ partial "bookshop_partial" (slice "page" $hero.Params.hero_blocks) }} 
+{{ end }}
 
 <section class="blog">
     <div class="container">
         <div class="row">
-            {{ if .Params.heading }}
-                {{ partial "bookshop_bindings" `(dict "live_render" false)` }}
-                {{ partial "bookshop" (slice "generic/heading" .Params.heading ) }}
+            {{ if .Params.content_blocks }}
+                {{ partial "bookshop_bindings" `.Params.content_blocks` }}
+                {{ partial "bookshop_partial" (slice "page" .Params.content_blocks) }} 
             {{ else }}
                 {{ partial "bookshop_bindings" `(dict "live_render" false)` }}
                 {{ partial "bookshop" (slice "generic/heading" (dict "heading" (.Title | humanize))) }}
@@ -73,5 +78,3 @@
         </div>
     </div>
 </section>
-{{ partial "bookshop_bindings" `.Params.content_blocks` }}
-{{ partial "bookshop_partial" (slice "page" .Params.content_blocks) }} 
