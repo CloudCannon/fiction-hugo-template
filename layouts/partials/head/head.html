@@ -35,6 +35,8 @@
 
     <title>{{ .Page.Title }} | {{ .Site.Data.company.SEO_options.site_title }}</title>
 
+    <link rel="icon" type="image/x-icon" href="{{ .Site.Data.company.favicon }}">
+
     {{/*  Add the description meta tags  */}}
     {{ if eq .RelPermalink "/" }}
       <meta name="description" content="{{ .Site.Data.company.SEO_options.description }}" />
