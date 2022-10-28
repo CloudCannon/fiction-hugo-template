@@ -5,6 +5,9 @@ collections_config:
     schemas:
       page:
         path: schemas/page.md
+    filter:
+      exclude:
+        - components.md
   portfolios:
     schemas:
       default:
