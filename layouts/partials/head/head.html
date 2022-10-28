@@ -33,11 +33,59 @@
       </style>
     <script src="/plugins/modernizr.min.js"></script>
 
-    <title>{{ .Page.Title }} | {{ .Site.Data.company.SEO.site_title }}</title>
+    <title>{{ .Page.Title }} | {{ .Site.Data.company.SEO_options.site_title }}</title>
 
+    {{/*  Add the description meta tags  */}}
     {{ if eq .Url "/" }}
-      <meta name="description" content="{{ .Site.Data.company.SEO.description }}" />
+      <meta name="description" content="{{ .Site.Data.company.SEO_options.description }}" />
     {{- else -}}
-      <meta name="description" content="{{ .Params.seo_description }}" />
+      <meta name="description" content="{{ .Params.SEO_options.description }}" />
+    {{- end }}
+
+    {{/*  Add canonical link meta tags  */}}
+    {{- if isset .Params "canonical" -}}
+      <link rel="canonical" href="{{ .Params.SEO_options.canonical_link }}" />
+    {{- else -}}
+      <link rel="canonical" href="{{ .Permalink }}" />
+    {{- end }}
+
+    {{/*  Meta tags - these can be set in seo options block of the company.yml file or inside each page  */}}
+    {{- if eq .Url "/" -}}
+      <meta name="og:title" content="{{ site.Data.company.SEO_options.site_title }}" />
+      <meta property="og:type" content="website" />
+      <meta property="og:description" content="{{ site.Data.company.SEO_options.description }}" />
+      <meta property="og:url" content="{{ site.BaseURL }}" />
+      <meta name="og:image" content="{{ site.company.SEO_options.image }}" />
+      <meta name="twitter:creator" content="{{ .site.company.SEO_options.twitter_site }}" />
+      <meta name="twitter:title" content="{{ site.Data.company.SEO_options.site_title }}" />
+      {{- if isset site.Data.company.SEO_options.twitter_image -}}
+        <meta name="twitter:image" content="{{ site.Data.company.SEO_options.twitter_image }}" />
+      {{- else -}}
+        <meta name="twitter:image" content="{{ site.company.SEO_options.image }}" />
+      {{- end -}}
+    {{- else -}}
+      <meta name="og:title" content="{{ .Title }}" />
+      {{- if isset .Params.SEO_options.og_type -}}
+        <meta property="og:type" content="{{ .Params.SEO_options.og_type }}" />
+      {{- else -}}
+        <meta property="og:type" content="website" />
+      {{- end -}}
+
+      <meta property="og:description" content="{{ .Params.SEO_options.description }}" />
+      <meta property="og:url" content="{{ .Permalink }}" />
+
+      {{- if isset .Params.SEO_options.featured_image -}}
+        <meta name="og:image/" content="{{ .Params.SEO_options.featured_image }}" />
+        <meta name="twitter:image" content="{{ .Params.SEO_options.featured_image }}" />
+      {{- else -}}
+        <meta name="og:image" content="{{ site.company.SEO_options.image }}" />
+        {{- if isset site.Data.company.SEO_options.twitter_image -}}
+          <meta name="twitter:image" content="{{ site.Data.company.SEO_options.twitter_image }}" />
+        {{- else -}}
+          <meta name="twitter:image" content="{{ site.company.SEO_options.image }}" />
+        {{- end -}}
+      {{- end -}}
+
+      <meta name="twitter:title" content="{{ .Title }}" />
     {{- end }}
 </head>

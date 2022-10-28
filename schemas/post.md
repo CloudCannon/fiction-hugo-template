@@ -17,5 +17,9 @@ description:
 link:
   _bookshop_name: 
   content: 
-seo_description:
+SEO_options:
+  description:
+  featured_image: 
+  og_type: article
+  canonical_link:
 ---

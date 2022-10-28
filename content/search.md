@@ -1,6 +1,10 @@
 ---
 title: Search
-seo_description: Search the site
+seo_options:
+  description: Search the site
+  featured_image:
+  og_type: 
+  canonical_link:
 type: search
 content_blocks:
   - _bookshop_name: sections/hero
