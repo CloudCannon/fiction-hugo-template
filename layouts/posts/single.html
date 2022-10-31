@@ -3,7 +3,7 @@
   {{ partial "bookshop_partial" (slice "page" .Params.hero_blocks) }} 
   <!-- Blog Sections 
     =========================-->
-  <section class="blog-single">
+  <section class="blog-single" data-pagefind-body>
     <div class="container">
       <div class="row">
         {{ partial "bookshop_bindings" `.Params.content_blocks` }}
