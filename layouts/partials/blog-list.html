@@ -7,7 +7,7 @@
     {{ partial "bookshop_partial" (slice "page" $hero.Params.hero_blocks) }} 
 {{ end }}
 
-<section class="blog">
+<section data-pagefind-ignore class="blog">
     <div class="container">
         <div class="row">
             {{ if .Params.content_blocks }}
