@@ -1,5 +1,10 @@
 ---
 title: Contact
+seo_options:
+  description: How to contact us
+  featured_image:
+  og_type: 
+  canonical_link:
 content_blocks:
   - _bookshop_name: sections/hero
     heading: Contact Us.

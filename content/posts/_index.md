@@ -1,5 +1,10 @@
 ---
 title: Blog
+seo_options:
+  description: Landing page for all blog posts
+  featured_image:
+  og_type: 
+  canonical_link:
 url: /blog/
 hero_blocks:
   - _bookshop_name: sections/hero

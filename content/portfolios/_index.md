@@ -1,5 +1,10 @@
 ---
 title: Portfolio
+seo_options:
+  description: Landing page for all portfolio items
+  featured_image:
+  og_type: 
+  canonical_link:
 url: /portfolio/
 hero_blocks:
   - _bookshop_name: sections/hero

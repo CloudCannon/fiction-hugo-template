@@ -1,7 +1,7 @@
 {{ define "main" }}
     {{ partial "bookshop_bindings" `.Params.hero_blocks` }}
     {{ partial "bookshop_partial" (slice "page" .Params.hero_blocks) }} 
-    <section class="portfolio-single">
+    <section class="portfolio-single" data-pagefind-body>
         <div class="container-fluid padding-0">
             <div class="row margin-0">
                 <div class="title text-center" data-cms-bind="#heading">

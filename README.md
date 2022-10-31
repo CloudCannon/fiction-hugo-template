@@ -17,6 +17,8 @@ Fiction was made by [Themefisher](https://themefisher.com/) and converted to Hug
 * Configurable navigation and footer
 * Multiple hero options - single image, image slider and video
 * Optimised for editing in [CloudCannon](https://cloudcannon.com/)
+* Configurable search engine optimisation
+* Search using [Pagefind](https://pagefind.app/)
 
 ## Setup
 

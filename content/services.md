@@ -1,5 +1,10 @@
 ---
 title: Services
+seo_options:
+  description: The services that we offer
+  featured_image:
+  og_type: 
+  canonical_link:
 content_blocks:
   - _bookshop_name: sections/hero
     heading: Our Services.
