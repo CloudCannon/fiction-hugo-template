@@ -1,5 +1,8 @@
 # Fiction
 
+> [!IMPORTANT]
+> This template is no longer actively maintained but remains available for reference and learning. For production sites, we recommend our [modern templates](https://cloudcannon.com/templates/).
+
 Template for Hugo. Browse through a [live demo](https://scenic-sea.cloudvent.net/). This theme has been adapted from the MIT-licensed [Fiction Bootstrap template from Theme Fisher](https://themefisher.com/products/fiction-bootstrap-agency-template/).
 
 ![Fiction template screenshot](images/_index-video.png)
